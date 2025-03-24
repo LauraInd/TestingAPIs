@@ -1,0 +1,495 @@
+2025-03-15 10:03:27,254 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 58827 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-03-15 10:03:27,268 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-15 10:03:28,218 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-15 10:03:28,332 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
+2025-03-15 10:03:29,579 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-03-15 10:03:29,600 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-15 10:03:29,605 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-03-15 10:03:29,605 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-15 10:03:29,755 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-03-15 10:03:29,757 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 2407 ms
+2025-03-15 10:03:29,815 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-03-15 10:03:30,146 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-03-15 10:03:30,149 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-03-15 10:03:30,163 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-03-15 10:03:30,329 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-15 10:03:30,404 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-15 10:03:30,453 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-03-15 10:03:30,829 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-15 10:03:30,887 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-15 10:03:30,904 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-15 10:03:32,209 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-15 10:03:32,284 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 10:03:32,861 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-15 10:03:33,352 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-03-15 10:03:33,399 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-03-15 10:03:33,409 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 6.915 seconds (process running for 7.691)
+2025-03-15 10:04:14,989 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-15 10:04:14,995 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-03-15 10:04:15,007 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Completed initialization in 11 ms
+2025-03-15 10:04:15,098 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 10:04:15,098 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-15 10:04:15,391 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 10:04:15,391 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-15 10:04:21,483 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 10:04:21,492 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 9
+2025-03-15 10:05:05,481 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 10:05:05,500 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 10:05:05,522 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 10:05:05,522 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 10:06:13,935 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-15 10:06:13,948 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-15 10:06:18,142 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 10:06:18,152 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 9
+2025-03-15 10:06:53,968 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-3] BEGIN addUser - Adding user: jesus@gmail.com
+2025-03-15 10:06:54,040 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-3] END addUser - User added with ID: 15
+2025-03-15 10:06:58,883 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 10:06:58,902 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 10:07:00,747 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 10:07:00,751 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 10
+2025-03-15 10:07:08,595 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 10:07:08,599 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 10:13:08,844 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 10:13:08,844 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 10:13:08,892 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 10:13:08,892 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 10:15:35,490 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 10:15:35,514 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 10
+2025-03-15 10:15:39,184 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 10:15:39,192 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 10:15:39,205 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-15 10:15:39,210 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-15 10:19:36,628 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 10:19:36,628 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 10:19:36,677 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 10:19:36,677 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 10:19:40,469 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 10:19:40,479 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 10
+2025-03-15 10:20:21,122 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-6] BEGIN updateUser - Updating user with ID: 10
+2025-03-15 10:20:21,335 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-6] END updateUser - User updated with ID: 10
+2025-03-15 10:22:09,221 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] BEGIN deleteUser - Deleting user with ID: 12
+2025-03-15 10:22:10,208 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] END deleteUser - User deleted with ID: 12
+2025-03-15 10:22:15,772 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-15 10:22:15,780 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-15 10:22:17,076 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 10:22:17,080 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 9
+2025-03-15 10:25:28,550 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 10:25:28,549 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 10:25:28,731 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 10:25:28,731 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 10:25:35,120 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-15 10:25:35,128 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 9
+2025-03-15 10:25:47,547 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-10] BEGIN updateUser - Updating user with ID: 14
+2025-03-15 10:25:47,560 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-10] END updateUser - User updated with ID: 14
+2025-03-15 10:25:56,236 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 10:25:56,242 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 10:25:58,277 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-15 10:25:58,281 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 9
+2025-03-15 10:26:16,152 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-3] BEGIN deleteUser - Deleting user with ID: 14
+2025-03-15 10:26:16,220 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-3] END deleteUser - User deleted with ID: 14
+2025-03-15 10:26:19,805 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 10:26:19,810 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 10:26:22,683 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 10:26:22,687 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 8
+2025-03-15 10:26:27,503 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-15 10:26:27,520 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-15 10:26:38,490 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] BEGIN getAllUsers
+2025-03-15 10:26:38,496 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] END getAllUsers - Total users fetched: 8
+2025-03-15 10:27:26,114 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-8] BEGIN addUser - Adding user: jindia@prueba.es
+2025-03-15 10:27:26,144 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-8] END addUser - User added with ID: 16
+2025-03-15 10:27:35,019 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 10:27:35,043 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 10:27:39,878 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 10:27:39,882 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 9
+2025-03-15 10:27:51,730 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-2] BEGIN updateUser - Updating user with ID: 16
+2025-03-15 10:27:51,746 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-2] END updateUser - User updated with ID: 16
+2025-03-15 10:33:23,909 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 10:33:23,909 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 10:33:23,998 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 10:33:24,014 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 10:33:26,949 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-15 10:33:26,957 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 9
+2025-03-15 10:33:56,020 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] BEGIN addUser - Adding user: perdro@perez.hola
+2025-03-15 10:33:56,030 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] END addUser - User added with ID: 17
+2025-03-15 10:33:59,160 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 10:33:59,172 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 10:34:02,421 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-15 10:34:02,429 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 10
+2025-03-15 10:34:15,973 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-3] BEGIN updateUser - Updating user with ID: 17
+2025-03-15 10:34:15,981 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-3] END updateUser - User updated with ID: 17
+2025-03-15 10:38:24,137 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-15 10:38:24,137 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 10:38:24,202 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 10:38:24,205 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-15 10:38:28,422 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 10:38:28,459 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 10
+2025-03-15 10:39:00,124 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-4] BEGIN addUser - Adding user: jose@unizar.es
+2025-03-15 10:39:00,133 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-4] END addUser - User added with ID: 18
+2025-03-15 10:39:02,794 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 10:39:02,806 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 10:39:05,494 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 10:39:05,498 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 11
+2025-03-15 10:39:18,403 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-8] BEGIN updateUser - Updating user with ID: 18
+2025-03-15 10:39:18,406 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-8] END updateUser - User updated with ID: 18
+2025-03-15 10:39:26,832 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-10] BEGIN updateUser - Updating user with ID: 18
+2025-03-15 10:39:26,841 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-10] END updateUser - User updated with ID: 18
+2025-03-15 10:39:32,797 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] BEGIN deleteUser - Deleting user with ID: 18
+2025-03-15 10:39:32,810 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] END deleteUser - User deleted with ID: 18
+2025-03-15 10:39:34,867 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 10:39:34,873 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 10:39:35,975 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-15 10:39:35,980 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 10
+2025-03-15 10:39:39,557 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-5] BEGIN deleteUser - Deleting user with ID: 17
+2025-03-15 10:39:39,565 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-5] END deleteUser - User deleted with ID: 17
+2025-03-15 10:39:46,936 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-6] BEGIN deleteUser - Deleting user with ID: 16
+2025-03-15 10:39:46,942 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-6] END deleteUser - User deleted with ID: 16
+2025-03-15 10:39:48,406 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 10:39:48,411 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 10:39:49,605 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] BEGIN getAllUsers
+2025-03-15 10:39:49,607 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] END getAllUsers - Total users fetched: 8
+2025-03-15 10:39:52,025 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 10:39:52,031 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 10:40:56,072 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 10:40:56,121 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 8
+2025-03-15 10:43:26,596 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-15 10:43:26,596 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 10:43:26,647 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-15 10:43:26,647 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 10:43:29,496 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 10:43:29,503 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 8
+2025-03-15 10:43:46,127 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-7] BEGIN updateUser - Updating user with ID: 15
+2025-03-15 10:43:46,132 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-7] END updateUser - User updated with ID: 15
+2025-03-15 10:54:53,127 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 10:54:53,187 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 10:54:53,202 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 10:54:53,202 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 10:54:55,908 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 10:54:55,914 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 8
+2025-03-15 10:55:09,522 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-5] BEGIN updateUser - Updating user with ID: 15
+2025-03-15 10:55:09,547 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-5] END updateUser - User updated with ID: 15
+2025-03-15 10:55:12,815 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 10:55:12,818 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 8
+2025-03-15 10:55:37,279 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-7] BEGIN updateUser - Updating user with ID: 2
+2025-03-15 10:55:37,284 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-7] END updateUser - User updated with ID: 2
+2025-03-15 10:55:39,572 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-15 10:55:39,576 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 8
+2025-03-15 10:55:50,471 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-15 10:55:50,479 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-15 10:56:55,991 INFO c.s.a.c.EventController {addEvent} [http-nio-8080-exec-8] BEGIN addEvent - Adding new event: Aragon Fashion Week
+2025-03-15 10:56:56,272 INFO c.s.a.c.EventController {addEvent} [http-nio-8080-exec-8] END addEvent - Event added with ID: 3
+2025-03-15 10:56:59,324 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 10:56:59,329 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 11:01:25,879 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-2] BEGIN updateEvent - Updating event with ID: 3
+2025-03-15 11:01:25,928 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-2] END updateEvent - Event updated with ID: 3
+2025-03-15 11:01:29,602 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 11:01:29,616 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 11:13:08,970 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-15 11:13:08,970 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 11:13:09,088 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-15 11:13:09,088 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 11:13:28,273 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-8] BEGIN updateEvent - Updating event with ID: 15
+2025-03-15 11:13:28,302 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-8] END updateEvent - Event updated with ID: 15
+2025-03-15 11:13:33,133 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 11:13:33,139 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 11:13:37,773 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 11:13:37,780 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 11:21:26,995 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m55s306ms).
+2025-03-15 11:25:19,804 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 11:25:19,804 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-15 11:25:19,886 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 11:25:19,886 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-15 11:25:46,678 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-8] BEGIN updateEvent - Updating event with ID: 3
+2025-03-15 11:25:46,713 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-8] END updateEvent - Event updated with ID: 3
+2025-03-15 11:27:35,322 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 11:27:35,322 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-15 11:27:35,364 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-15 11:27:35,364 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 11:27:37,504 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 11:27:37,526 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 8
+2025-03-15 11:27:39,576 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 11:27:39,596 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 11:27:49,508 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-5] BEGIN updateEvent - Updating event with ID: 3
+2025-03-15 11:27:49,518 INFO c.s.a.c.EventController {updateEvent} [http-nio-8080-exec-5] END updateEvent - Event updated with ID: 3
+2025-03-15 11:27:49,819 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-15 11:27:49,863 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-15 11:28:05,548 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 11:28:05,553 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 11:31:52,514 INFO c.s.a.c.EventController {addEvent} [http-nio-8080-exec-5] BEGIN addEvent - Adding new event: Maniobras
+2025-03-15 11:31:52,837 ERROR o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377)
+	at com.svalero.apievents.service.EventService.add(EventService.java:75)
+	at com.svalero.apievents.controller.EventController.addEvent(EventController.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-03-15 11:31:58,373 INFO c.s.a.c.EventController {addEvent} [http-nio-8080-exec-6] BEGIN addEvent - Adding new event: Maniobras
+2025-03-15 11:31:58,408 INFO c.s.a.c.EventController {addEvent} [http-nio-8080-exec-6] END addEvent - Event added with ID: 4
+2025-03-15 11:32:01,832 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 11:32:01,852 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 11:32:09,018 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 11:32:09,024 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 11:39:56,425 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] BEGIN getAllUsers
+2025-03-15 11:39:56,583 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] END getAllUsers - Total users fetched: 8
+2025-03-15 11:40:00,473 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 11:40:00,485 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 11:40:00,502 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 11:40:00,507 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 11:40:03,704 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 11:40:03,707 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 8
+2025-03-15 11:40:34,931 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-8] BEGIN updateUser - Updating user with ID: 9
+2025-03-15 11:40:34,968 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-8] END updateUser - User updated with ID: 9
+2025-03-15 11:40:47,261 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-9] BEGIN updateUser - Updating user with ID: 9
+2025-03-15 11:40:47,266 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-9] END updateUser - User updated with ID: 9
+2025-03-15 11:40:51,099 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] BEGIN getAllUsers
+2025-03-15 11:40:51,113 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] END getAllUsers - Total users fetched: 8
+2025-03-15 11:40:57,943 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-2] BEGIN deleteUser - Deleting user with ID: 9
+2025-03-15 11:40:58,014 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-2] END deleteUser - User deleted with ID: 9
+2025-03-15 11:44:05,482 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 11:44:05,481 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 11:44:05,553 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 11:44:05,556 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 11:44:09,441 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] BEGIN getAllUsers
+2025-03-15 11:44:09,476 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] END getAllUsers - Total users fetched: 7
+2025-03-15 11:44:39,634 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-2] BEGIN addUser - Adding user: magen@arquitectos.com
+2025-03-15 11:44:39,696 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-2] END addUser - User added with ID: 19
+2025-03-15 11:44:44,782 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-15 11:44:44,800 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-15 11:44:48,625 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 11:44:48,632 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 8
+2025-03-15 11:44:55,071 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-3] BEGIN deleteUser - Deleting user with ID: 19
+2025-03-15 11:44:55,084 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-3] END deleteUser - User deleted with ID: 19
+2025-03-15 11:44:57,408 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 11:44:57,416 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 11:44:58,764 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 11:44:58,767 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 7
+2025-03-15 11:45:55,497 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-1] BEGIN updateUser - Updating user with ID: 15
+2025-03-15 11:45:55,552 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-1] END updateUser - User updated with ID: 15
+2025-03-15 11:45:58,396 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 11:45:58,413 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 7
+2025-03-15 11:49:07,602 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 11:49:07,602 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 11:49:07,647 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 11:49:07,647 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 11:49:11,627 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-15 11:49:11,637 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 7
+2025-03-15 11:49:29,579 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] BEGIN addUser - Adding user: jaime@prueba.com
+2025-03-15 11:49:29,603 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] END addUser - User added with ID: 20
+2025-03-15 11:49:32,559 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 11:49:32,566 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 11:49:34,566 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 11:49:34,571 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 8
+2025-03-15 11:49:43,493 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-4] BEGIN deleteUser - Deleting user with ID: 20
+2025-03-15 11:49:43,502 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-4] END deleteUser - User deleted with ID: 20
+2025-03-15 11:49:43,550 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 11:49:43,554 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 7
+2025-03-15 11:50:07,541 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-8] BEGIN addUser - Adding user: majdjf@nodf.com
+2025-03-15 11:50:07,546 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-8] END addUser - User added with ID: 21
+2025-03-15 11:50:09,997 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 11:50:10,003 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 11:50:11,827 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-15 11:50:11,829 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 8
+2025-03-15 11:50:16,333 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] BEGIN deleteUser - Deleting user with ID: 21
+2025-03-15 11:50:16,357 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-1] END deleteUser - User deleted with ID: 21
+2025-03-15 11:50:16,404 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 11:50:16,414 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 7
+2025-03-15 12:06:13,939 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 12:06:13,939 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 12:06:14,023 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 12:06:14,023 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 12:06:17,796 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-15 12:06:17,809 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 7
+2025-03-15 12:06:45,539 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-5] BEGIN addUser - Adding user: magen@arquitectos.com
+2025-03-15 12:06:45,584 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-5] END addUser - User added with ID: 22
+2025-03-15 12:06:49,595 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 12:06:49,636 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 12:06:51,359 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 12:06:51,366 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 8
+2025-03-15 12:09:08,259 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 12:09:08,259 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 12:09:08,321 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 12:09:08,356 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 12:09:28,449 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 12:09:28,458 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 8
+2025-03-15 12:10:13,661 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-9] BEGIN addUser - Adding user: hola@hola
+2025-03-15 12:10:13,690 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-9] END addUser - User added with ID: 23
+2025-03-15 12:15:10,116 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 12:15:10,116 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-15 12:15:10,192 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 12:15:10,192 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-15 12:15:15,238 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-15 12:15:15,248 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 9
+2025-03-15 12:15:29,790 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-5] BEGIN deleteUser - Deleting user with ID: 23
+2025-03-15 12:15:29,836 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-5] END deleteUser - User deleted with ID: 23
+2025-03-15 12:15:32,224 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 12:15:32,276 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 12:15:34,307 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] BEGIN getAllUsers
+2025-03-15 12:15:34,312 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] END getAllUsers - Total users fetched: 8
+2025-03-15 12:16:01,152 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-6] BEGIN addUser - Adding user: hola@hola.com
+2025-03-15 12:16:01,160 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-6] END addUser - User added with ID: 24
+2025-03-15 12:18:47,030 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-15 12:18:47,030 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-15 12:18:47,109 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-15 12:18:47,109 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-15 12:19:07,336 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 12:19:07,344 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 9
+2025-03-15 12:19:46,258 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] BEGIN addUser - Adding user: hhhh@hh.com
+2025-03-15 12:19:46,337 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-10] END addUser - User added with ID: 25
+2025-03-15 12:21:54,917 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-15 12:21:54,917 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-15 12:21:54,972 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-15 12:21:54,998 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-15 12:22:01,299 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] BEGIN getAllUsers
+2025-03-15 12:22:01,303 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 12:22:01,310 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-7] END getAllUsers - Total users fetched: 10
+2025-03-15 12:22:01,310 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 10
+2025-03-15 12:22:43,166 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-6] BEGIN addUser - Adding user: sdf@sdf.com
+2025-03-15 12:22:43,193 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-6] END addUser - User added with ID: 26
+2025-03-15 12:22:43,378 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] BEGIN getAllUsers
+2025-03-15 12:22:43,386 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] END getAllUsers - Total users fetched: 11
+2025-03-15 12:22:50,906 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-15 12:22:50,910 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 11
+2025-03-15 12:23:27,452 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-4] BEGIN deleteUser - Deleting user with ID: 26
+2025-03-15 12:23:27,565 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-4] END deleteUser - User deleted with ID: 26
+2025-03-15 12:23:27,827 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-15 12:23:27,847 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 10
+2025-03-15 12:23:32,220 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-7] BEGIN deleteUser - Deleting user with ID: 25
+2025-03-15 12:23:32,227 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-7] END deleteUser - User deleted with ID: 25
+2025-03-15 12:23:32,276 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 12:23:32,283 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 9
+2025-03-15 12:23:35,757 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-6] BEGIN deleteUser - Deleting user with ID: 24
+2025-03-15 12:23:35,765 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-6] END deleteUser - User deleted with ID: 24
+2025-03-15 12:23:35,848 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] BEGIN getAllUsers
+2025-03-15 12:23:35,857 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-10] END getAllUsers - Total users fetched: 8
+2025-03-15 12:23:39,528 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-9] BEGIN deleteUser - Deleting user with ID: 22
+2025-03-15 12:23:39,536 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-9] END deleteUser - User deleted with ID: 22
+2025-03-15 12:23:39,582 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 12:23:39,588 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 7
+2025-03-15 12:24:14,311 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-3] BEGIN addUser - Adding user: JOSE@UNAV.COM
+2025-03-15 12:24:14,327 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-3] END addUser - User added with ID: 27
+2025-03-15 12:24:14,501 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-15 12:24:14,508 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 8
+2025-03-15 12:24:28,347 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-5] BEGIN updateUser - Updating user with ID: 27
+2025-03-15 12:24:28,362 INFO c.s.a.c.UserController {updateUser} [http-nio-8080-exec-5] END updateUser - User updated with ID: 27
+2025-03-15 12:24:31,223 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-15 12:24:31,227 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 8
+2025-03-15 12:24:31,256 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-15 12:24:31,263 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 8
+2025-03-15 12:24:35,367 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-9] BEGIN deleteUser - Deleting user with ID: 27
+2025-03-15 12:24:35,373 INFO c.s.a.c.UserController {deleteUser} [http-nio-8080-exec-9] END deleteUser - User deleted with ID: 27
+2025-03-15 12:24:35,428 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 12:24:35,433 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 7
+2025-03-15 12:47:06,555 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-15 12:47:06,939 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-03-15 12:47:07,008 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:47:07,116 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-03-15 12:47:07,144 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-03-15 12:53:59,593 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 62585 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-03-15 12:53:59,600 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-15 12:54:00,337 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-15 12:54:00,467 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+2025-03-15 12:54:01,244 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-03-15 12:54:01,274 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-15 12:54:01,298 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-03-15 12:54:01,303 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-15 12:54:01,421 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-03-15 12:54:01,423 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1773 ms
+2025-03-15 12:54:01,489 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-03-15 12:54:02,474 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-03-15 12:54:02,478 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-03-15 12:54:02,510 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-03-15 12:54:02,794 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-15 12:54:02,909 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-15 12:54:02,973 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-03-15 12:54:03,658 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-15 12:54:03,774 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-15 12:54:03,813 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-15 12:54:05,944 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-15 12:54:06,122 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:54:07,142 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-15 12:54:08,403 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-03-15 12:54:08,505 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-03-15 12:54:08,534 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 9.578 seconds (process running for 9.964)
+2025-03-15 12:54:54,288 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-15 12:54:54,290 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-03-15 12:54:54,294 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Completed initialization in 4 ms
+2025-03-15 12:54:54,380 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-15 12:54:54,380 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-15 12:54:54,631 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-15 12:54:54,631 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-15 12:54:58,449 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-15 12:54:58,458 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 7
+2025-03-15 12:54:58,469 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-15 12:54:58,476 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 7
+2025-03-15 12:58:59,436 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-15 12:58:59,436 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-15 12:58:59,493 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-15 12:58:59,493 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-15 12:59:02,304 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-15 12:59:02,315 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 7
+2025-03-15 12:59:02,328 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-15 12:59:02,333 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 7
+2025-03-15 13:00:54,438 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-15 13:00:54,507 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-03-15 13:00:54,525 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 13:00:54,539 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-03-15 13:00:54,545 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

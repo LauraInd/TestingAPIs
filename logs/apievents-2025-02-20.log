@@ -1,0 +1,440 @@
+2025-02-20 18:01:44,288 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 1715 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 18:01:44,297 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 18:01:44,986 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 18:01:45,069 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2025-02-20 18:01:45,619 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-02-20 18:01:45,635 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-20 18:01:45,639 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-02-20 18:01:45,639 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-20 18:01:45,730 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-02-20 18:01:45,731 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1379 ms
+2025-02-20 18:01:45,763 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 18:01:46,073 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 18:01:46,075 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 18:01:46,088 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-02-20 18:01:46,219 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 18:01:46,294 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 18:01:46,334 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 18:01:46,658 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 18:01:46,711 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 18:01:46,728 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 18:01:47,719 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 18:01:47,778 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:01:48,214 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 18:01:48,586 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-20 18:01:48,629 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-20 18:01:48,636 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 5.011 seconds (process running for 5.49)
+2025-02-20 18:01:59,945 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-20 18:01:59,948 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-20 18:01:59,950 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-02-20 18:02:00,010 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-02-20 18:02:00,010 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-02-20 18:02:00,274 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 6
+2025-02-20 18:02:00,274 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 6
+2025-02-20 18:02:04,041 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-02-20 18:02:04,047 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 6
+2025-02-20 18:02:04,075 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-02-20 18:02:04,080 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 6
+2025-02-20 18:06:18,570 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 18:06:18,674 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-02-20 18:06:18,694 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:06:18,715 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-20 18:06:18,725 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-20 18:53:33,011 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 1952 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 18:53:33,013 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 18:53:33,627 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 18:53:33,707 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2025-02-20 18:53:34,214 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-02-20 18:53:34,230 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-20 18:53:34,234 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-02-20 18:53:34,235 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-20 18:53:34,304 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-02-20 18:53:34,305 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1242 ms
+2025-02-20 18:53:34,347 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 18:53:34,605 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 18:53:34,607 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 18:53:34,619 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-02-20 18:53:34,763 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 18:53:34,826 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 18:53:34,868 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 18:53:35,186 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 18:53:35,253 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 18:53:35,270 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 18:53:36,251 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 18:53:36,313 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:53:36,693 WARN o.s.c.s.AbstractApplicationContext {refresh} [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventController' defined in file [/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes/com/svalero/apievents/controller/EventController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-02-20 18:53:36,694 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:53:36,696 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown initiated...
+2025-02-20 18:53:36,745 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown completed.
+2025-02-20 18:53:36,749 INFO o.a.j.l.DirectJDKLog {log} [main] Stopping service [Tomcat]
+2025-02-20 18:53:36,769 INFO o.s.b.a.l.ConditionEvaluationReportLogger {logMessage} [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-20 18:53:36,798 ERROR o.s.b.d.LoggingFailureAnalysisReporter {report} [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in com.svalero.apievents.service.EventService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2025-02-20 18:54:47,660 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 1975 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 18:54:47,666 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 18:54:48,292 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 18:54:48,382 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2025-02-20 18:54:48,957 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-02-20 18:54:48,990 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-20 18:54:48,994 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-02-20 18:54:48,994 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-20 18:54:49,067 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-02-20 18:54:49,068 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1354 ms
+2025-02-20 18:54:49,099 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 18:54:49,383 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 18:54:49,385 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 18:54:49,396 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-02-20 18:54:49,531 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 18:54:49,598 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 18:54:49,635 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 18:54:49,969 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 18:54:50,029 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 18:54:50,052 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 18:54:51,017 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 18:54:51,109 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:54:51,486 WARN o.s.c.s.AbstractApplicationContext {refresh} [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventController' defined in file [/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes/com/svalero/apievents/controller/EventController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-02-20 18:54:51,486 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:54:51,489 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown initiated...
+2025-02-20 18:54:51,537 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown completed.
+2025-02-20 18:54:51,541 INFO o.a.j.l.DirectJDKLog {log} [main] Stopping service [Tomcat]
+2025-02-20 18:54:51,555 INFO o.s.b.a.l.ConditionEvaluationReportLogger {logMessage} [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-20 18:54:51,579 ERROR o.s.b.d.LoggingFailureAnalysisReporter {report} [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in com.svalero.apievents.service.EventService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2025-02-20 18:58:24,996 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplicationTests using Java 23.0.2 with PID 2017 (started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 18:58:24,998 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 18:58:25,684 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 18:58:25,742 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2025-02-20 18:58:26,149 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 18:58:26,218 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 18:58:26,256 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 18:58:26,562 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 18:58:26,594 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 18:58:26,841 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 18:58:26,843 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 18:58:26,870 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 18:58:26,891 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 18:58:27,824 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 18:58:27,881 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:58:28,228 WARN o.s.c.s.AbstractApplicationContext {refresh} [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventController' defined in file [/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes/com/svalero/apievents/controller/EventController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-02-20 18:58:28,229 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:58:28,231 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown initiated...
+2025-02-20 18:58:28,275 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown completed.
+2025-02-20 18:58:28,302 INFO o.s.b.a.l.ConditionEvaluationReportLogger {logMessage} [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-20 18:58:28,339 ERROR o.s.b.d.LoggingFailureAnalysisReporter {report} [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in com.svalero.apievents.service.EventService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2025-02-20 18:58:28,345 WARN o.s.t.c.TestContextManager {prepareTestInstance} [main] Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.svalero.apievents.ApieventsApplicationTests@6e7d9d0]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@308e465b testClass = com.svalero.apievents.ApieventsApplicationTests, locations = [], classes = [com.svalero.apievents.ApieventsApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4f0f2942, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@69504ae9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d0399f4, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@798162bc, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@7486b455, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@461ad730, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@91305a8a], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventController' defined in file [/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes/com/svalero/apievents/controller/EventController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 101 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2139)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1589)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 115 common frames omitted
+2025-02-20 18:59:46,181 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 2071 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 18:59:46,183 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 18:59:46,799 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 18:59:46,878 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2025-02-20 18:59:47,442 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-02-20 18:59:47,465 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-20 18:59:47,471 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-02-20 18:59:47,472 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-20 18:59:47,569 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-02-20 18:59:47,573 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1338 ms
+2025-02-20 18:59:47,620 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 18:59:48,461 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 18:59:48,465 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 18:59:48,488 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-02-20 18:59:49,065 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 18:59:49,213 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 18:59:49,303 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 18:59:49,737 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 18:59:49,794 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 18:59:49,813 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 18:59:50,824 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 18:59:50,887 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:59:51,245 WARN o.s.c.s.AbstractApplicationContext {refresh} [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eventController' defined in file [/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes/com/svalero/apievents/controller/EventController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'eventService': Unsatisfied dependency expressed through field 'modelMapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-02-20 18:59:51,246 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 18:59:51,249 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown initiated...
+2025-02-20 18:59:51,498 INFO c.z.h.HikariDataSource {close} [main] HikariPool-1 - Shutdown completed.
+2025-02-20 18:59:51,501 INFO o.a.j.l.DirectJDKLog {log} [main] Stopping service [Tomcat]
+2025-02-20 18:59:51,515 INFO o.s.b.a.l.ConditionEvaluationReportLogger {logMessage} [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-20 18:59:51,543 ERROR o.s.b.d.LoggingFailureAnalysisReporter {report} [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in com.svalero.apievents.service.EventService required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2025-02-20 19:03:10,258 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 2116 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-02-20 19:03:10,260 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-20 19:03:10,885 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-20 19:03:10,966 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2025-02-20 19:03:11,494 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-02-20 19:03:11,510 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-20 19:03:11,514 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-02-20 19:03:11,514 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-20 19:03:11,581 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-02-20 19:03:11,583 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1275 ms
+2025-02-20 19:03:11,617 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-02-20 19:03:11,925 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-02-20 19:03:11,927 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-02-20 19:03:11,940 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-02-20 19:03:12,072 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-20 19:03:12,144 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-02-20 19:03:12,187 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-02-20 19:03:12,489 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-20 19:03:12,539 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-20 19:03:12,554 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-20 19:03:13,542 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-20 19:03:13,602 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 19:03:14,066 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-20 19:03:14,432 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-20 19:03:14,472 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-02-20 19:03:14,480 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 4.789 seconds (process running for 5.206)
+2025-02-20 19:03:54,509 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-20 19:03:54,516 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-20 19:03:54,530 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Completed initialization in 14 ms
+2025-02-20 19:03:54,878 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-02-20 19:03:54,878 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-02-20 19:03:55,195 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 6
+2025-02-20 19:03:55,195 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:16,513 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-02-20 19:06:16,514 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-02-20 19:06:16,568 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:16,568 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:21,015 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-02-20 19:06:21,028 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-02-20 19:06:21,070 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:21,070 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:26,188 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-02-20 19:06:26,197 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:30,389 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-02-20 19:06:30,396 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 6
+2025-02-20 19:06:44,797 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-02-20 19:06:44,804 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 6
+2025-02-20 19:07:13,987 WARN o.s.w.s.h.AbstractHandlerExceptionResolver {logException} [http-nio-8080-exec-2] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'categoryId' for method parameter type long is not present]
+2025-02-20 19:11:23,670 WARN o.s.w.s.h.AbstractHandlerExceptionResolver {logException} [http-nio-8080-exec-10] Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'categoryId' for method parameter type long is not present]
+2025-02-20 19:12:05,407 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-20 19:12:05,528 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-02-20 19:12:05,542 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-20 19:12:05,572 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-20 19:12:05,595 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

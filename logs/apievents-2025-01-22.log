@@ -1,0 +1,128 @@
+2025-01-22 00:36:27,510 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m16s47ms).
+2025-01-22 00:38:04,347 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s507ms).
+2025-01-22 00:55:25,164 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m8s13ms).
+2025-01-22 00:58:29,080 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s687ms).
+2025-01-22 01:01:07,630 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m37s222ms).
+2025-01-22 04:25:51,618 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h24m13s858ms).
+2025-01-22 04:28:00,559 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s318ms).
+2025-01-22 04:30:26,730 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s255ms).
+2025-01-22 06:26:54,650 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m57s567ms).
+2025-01-22 06:29:10,303 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s173ms).
+2025-01-22 06:30:56,901 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s78ms).
+2025-01-22 07:28:02,953 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m35s996ms).
+2025-01-22 07:29:32,719 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s570ms).
+2025-01-22 08:00:15,295 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m8s149ms).
+2025-01-22 08:02:51,594 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m36s205ms).
+2025-01-22 08:28:56,337 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m23s272ms).
+2025-01-22 08:30:17,424 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m20s814ms).
+2025-01-22 09:30:04,269 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m16s486ms).
+2025-01-22 09:30:50,712 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s389ms).
+2025-01-22 09:34:08,277 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s491ms).
+2025-01-22 10:31:05,339 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m26s521ms).
+2025-01-22 10:32:21,114 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s714ms).
+2025-01-22 11:32:04,035 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m7s414ms).
+2025-01-22 11:33:04,636 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m548ms).
+2025-01-22 12:32:52,237 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m47s141ms).
+2025-01-22 12:35:07,943 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s177ms).
+2025-01-22 12:38:20,169 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s638ms).
+2025-01-22 13:34:05,960 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m15s273ms).
+2025-01-22 13:36:46,603 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m40s207ms).
+2025-01-22 13:38:10,362 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s237ms).
+2025-01-22 14:35:13,079 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m32s227ms).
+2025-01-22 14:38:47,373 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s471ms).
+2025-01-22 14:39:59,549 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s116ms).
+2025-01-22 14:47:43,102 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s559ms).
+2025-01-22 14:50:26,445 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s920ms).
+2025-01-22 22:36:11,619 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23 with PID 3228 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-01-22 22:36:11,621 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-01-22 22:36:12,189 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22 22:36:12,259 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2025-01-22 22:36:12,740 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-01-22 22:36:12,754 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-22 22:36:12,757 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-01-22 22:36:12,757 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-22 22:36:12,843 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-01-22 22:36:12,844 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1168 ms
+2025-01-22 22:36:12,874 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-01-22 22:36:13,121 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-01-22 22:36:13,123 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-01-22 22:36:13,134 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-01-22 22:36:13,248 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22 22:36:13,310 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-22 22:36:13,344 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-01-22 22:36:13,633 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22 22:36:13,684 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-22 22:36:13,699 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22 22:36:14,571 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22 22:36:14,626 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22 22:36:15,062 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22 22:36:15,495 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-01-22 22:36:15,556 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-01-22 22:36:15,565 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 4.469 seconds (process running for 4.803)
+2025-01-22 22:37:05,470 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 22:37:05,471 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-01-22 22:37:05,472 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-01-22 22:37:05,510 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-01-22 22:37:05,660 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 6
+2025-01-22 22:53:51,944 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-01-22 22:53:52,082 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 5
+2025-01-22 22:53:52,976 WARN c.z.h.p.HikariPool$HouseKeeper {run} [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m39s737ms).
+2025-01-22 22:54:46,481 INFO c.s.a.c.EventCategoryController {getAllCategories} [http-nio-8080-exec-6] BEGIN getAllCategories
+2025-01-22 22:54:46,487 INFO c.s.a.c.EventCategoryController {getAllCategories} [http-nio-8080-exec-6] END getAllCategories - Total categories fetched: 3
+2025-01-22 22:55:03,601 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22 22:55:03,636 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-01-22 22:55:03,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22 22:55:03,649 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-01-22 22:55:03,653 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-01-22 23:07:33,908 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23 with PID 3349 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-01-22 23:07:33,911 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-01-22 23:07:34,563 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22 23:07:34,645 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2025-01-22 23:07:35,214 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-01-22 23:07:35,234 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-22 23:07:35,239 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-01-22 23:07:35,239 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-01-22 23:07:35,330 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-01-22 23:07:35,331 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1349 ms
+2025-01-22 23:07:35,366 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-01-22 23:07:35,652 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-01-22 23:07:35,655 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-01-22 23:07:35,668 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-01-22 23:07:35,824 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22 23:07:35,916 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-01-22 23:07:35,961 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-01-22 23:07:36,293 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22 23:07:36,347 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-22 23:07:36,364 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-22 23:07:37,472 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22 23:07:37,551 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22 23:07:38,024 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22 23:07:38,468 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-01-22 23:07:38,530 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-01-22 23:07:38,540 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 5.262 seconds (process running for 5.621)
+2025-01-22 23:08:00,532 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 23:08:00,533 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-01-22 23:08:00,534 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-01-22 23:08:00,583 INFO c.s.a.c.EventCategoryController {getAllCategories} [http-nio-8080-exec-1] BEGIN getAllCategories
+2025-01-22 23:08:00,763 INFO c.s.a.c.EventCategoryController {getAllCategories} [http-nio-8080-exec-1] END getAllCategories - Total categories fetched: 3
+2025-01-22 23:09:00,844 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-01-22 23:09:00,850 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 6
+2025-01-22 23:28:18,663 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-22 23:28:18,711 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-01-22 23:28:18,722 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22 23:28:18,733 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-01-22 23:28:18,738 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

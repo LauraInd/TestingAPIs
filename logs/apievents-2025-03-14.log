@@ -1,0 +1,204 @@
+2025-03-14 09:55:50,617 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 54005 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-03-14 09:55:50,620 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 09:55:51,308 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 09:55:51,387 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2025-03-14 09:55:51,955 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-03-14 09:55:51,972 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 09:55:51,976 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-03-14 09:55:51,977 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-14 09:55:52,060 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-03-14 09:55:52,061 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1385 ms
+2025-03-14 09:55:52,094 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-03-14 09:55:52,363 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-03-14 09:55:52,365 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-03-14 09:55:52,376 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-03-14 09:55:52,508 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 09:55:52,594 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-14 09:55:52,639 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-03-14 09:55:52,980 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 09:55:53,060 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-14 09:55:53,082 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-14 09:55:54,029 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 09:55:54,088 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 09:55:54,544 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 09:55:54,885 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 09:55:54,931 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 09:55:54,941 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 5.024 seconds (process running for 5.448)
+2025-03-14 09:56:25,115 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 09:56:25,121 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-03-14 09:56:25,147 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Completed initialization in 25 ms
+2025-03-14 09:56:25,332 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-14 09:56:25,332 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 09:56:25,692 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 09:56:25,692 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-14 09:56:57,578 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-14 09:56:57,587 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-14 09:57:04,344 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 09:57:04,350 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 10:05:35,936 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-14 10:05:35,936 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-14 10:05:36,079 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-14 10:05:36,079 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-14 10:08:27,810 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-14 10:08:27,810 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 10:08:27,866 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-14 10:08:27,866 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 10:33:34,241 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 10:33:34,241 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 10:33:34,438 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 10:33:34,438 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 10:39:06,103 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-14 10:39:06,103 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 10:39:06,165 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-14 10:39:06,165 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 10:45:22,619 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-14 10:45:22,683 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-14 10:45:39,586 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] BEGIN getAllUsers
+2025-03-14 10:45:39,694 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-6] END getAllUsers - Total users fetched: 7
+2025-03-14 11:11:08,119 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-14 11:11:08,119 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-14 11:11:08,275 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-14 11:11:08,275 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-14 11:11:19,338 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-14 11:11:19,403 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 7
+2025-03-14 11:50:05,270 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-14 11:50:05,270 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-14 11:50:05,435 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-14 11:50:05,435 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-14 11:50:35,270 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 11:50:35,334 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 11:50:37,827 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] BEGIN getAllUsers
+2025-03-14 11:50:37,844 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-8] END getAllUsers - Total users fetched: 7
+2025-03-14 11:50:41,740 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 11:50:41,744 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 11:50:41,846 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 11:50:41,869 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 11:55:15,655 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 11:55:15,655 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 11:55:15,789 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 11:55:15,789 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 11:55:18,319 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] BEGIN getAllUsers
+2025-03-14 11:55:18,331 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-1] END getAllUsers - Total users fetched: 7
+2025-03-14 11:55:22,381 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 11:55:22,391 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 11:55:22,404 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 11:55:22,414 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 11:55:32,024 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-14 11:55:32,037 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-14 11:56:48,982 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-14 11:56:49,028 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-14 11:57:33,537 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-14 11:57:33,537 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] BEGIN getAllEvents
+2025-03-14 11:57:33,691 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-9] END getAllEvents - Total events fetched: 7
+2025-03-14 11:57:33,691 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-14 11:57:47,378 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 11:57:47,389 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 11:57:53,359 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 11:57:53,372 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 11:57:55,146 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] BEGIN getAllUsers
+2025-03-14 11:57:55,154 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-5] END getAllUsers - Total users fetched: 7
+2025-03-14 11:59:07,880 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-9] BEGIN addUser - Adding user: holahola@prueba.es
+2025-03-14 11:59:08,123 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-9] END addUser - User added with ID: 13
+2025-03-14 11:59:22,819 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-14 11:59:22,958 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-14 11:59:25,119 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] BEGIN getAllUsers
+2025-03-14 11:59:25,131 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-2] END getAllUsers - Total users fetched: 8
+2025-03-14 12:22:34,921 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 12:22:35,082 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-03-14 12:22:35,116 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 12:22:35,159 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-03-14 12:22:35,171 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-03-14 12:26:17,442 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ApieventsApplication using Java 23.0.2 with PID 57356 (/Users/lauraindia/Desktop/DAM/AccesoDatos/apievents/target/classes started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
+2025-03-14 12:26:17,444 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
+2025-03-14 12:26:18,130 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-14 12:26:18,221 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2025-03-14 12:26:18,836 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 8080 (http)
+2025-03-14 12:26:18,853 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:26:18,857 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
+2025-03-14 12:26:18,857 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-03-14 12:26:18,938 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
+2025-03-14 12:26:18,939 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 1438 ms
+2025-03-14 12:26:18,987 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
+2025-03-14 12:26:19,303 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/users.db user=SA
+2025-03-14 12:26:19,307 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
+2025-03-14 12:26:19,324 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
+2025-03-14 12:26:19,461 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-14 12:26:19,544 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.6.2.Final
+2025-03-14 12:26:19,597 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
+2025-03-14 12:26:20,105 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-14 12:26:20,209 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-14 12:26:20,239 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator {initiateService} [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-14 12:26:21,608 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-14 12:26:21,707 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 12:26:22,610 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-14 12:26:23,394 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-03-14 12:26:23,462 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 8080 (http) with context path '/'
+2025-03-14 12:26:23,481 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ApieventsApplication in 6.732 seconds (process running for 7.095)
+2025-03-14 12:26:26,886 INFO o.a.j.l.DirectJDKLog {log} [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-14 12:26:26,887 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2025-03-14 12:26:26,889 INFO o.s.w.s.FrameworkServlet {initServletBean} [http-nio-8080-exec-2] Completed initialization in 1 ms
+2025-03-14 12:26:26,942 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] BEGIN getAllEvents
+2025-03-14 12:26:26,942 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] BEGIN getAllEvents
+2025-03-14 12:26:27,198 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-2] END getAllEvents - Total events fetched: 7
+2025-03-14 12:26:27,198 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-1] END getAllEvents - Total events fetched: 7
+2025-03-14 12:26:31,901 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] BEGIN getAllUsers
+2025-03-14 12:26:31,905 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-3] END getAllUsers - Total users fetched: 8
+2025-03-14 12:27:39,817 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-7] BEGIN addUser - Adding user: cayetana@pp.com
+2025-03-14 12:27:39,875 INFO c.s.a.c.UserController {addUser} [http-nio-8080-exec-7] END addUser - User added with ID: 14
+2025-03-14 12:27:46,035 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 12:27:46,043 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 12:27:48,183 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-14 12:27:48,187 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 9
+2025-03-14 12:49:46,673 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] BEGIN getAllEvents
+2025-03-14 12:49:46,673 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] BEGIN getAllEvents
+2025-03-14 12:49:46,832 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-5] END getAllEvents - Total events fetched: 7
+2025-03-14 12:49:46,832 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-3] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:04,521 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] BEGIN getAllEvents
+2025-03-14 12:50:04,586 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-4] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:14,698 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-14 12:50:14,706 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:20,506 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 12:50:20,635 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:28,721 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 12:50:28,785 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:30,937 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] BEGIN getAllUsers
+2025-03-14 12:50:30,957 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-9] END getAllUsers - Total users fetched: 9
+2025-03-14 12:50:44,599 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 12:50:44,611 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 12:50:44,614 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 12:50:44,619 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 12:51:21,925 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-14 12:51:21,931 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-14 12:51:21,970 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-14 12:51:21,970 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-14 12:51:29,565 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-14 12:51:29,573 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 9
+2025-03-14 12:51:41,961 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] BEGIN getAllEvents
+2025-03-14 12:51:41,980 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-7] END getAllEvents - Total events fetched: 7
+2025-03-14 12:51:42,099 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] BEGIN getAllEvents
+2025-03-14 12:51:42,152 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-8] END getAllEvents - Total events fetched: 7
+2025-03-14 12:57:26,495 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] BEGIN getAllEvents
+2025-03-14 12:57:26,495 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] BEGIN getAllEvents
+2025-03-14 12:57:26,713 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-6] END getAllEvents - Total events fetched: 7
+2025-03-14 12:57:26,713 INFO c.s.a.c.EventController {getAllEvents} [http-nio-8080-exec-10] END getAllEvents - Total events fetched: 7
+2025-03-14 12:57:36,839 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] BEGIN getAllUsers
+2025-03-14 12:57:36,849 INFO c.s.a.c.UserController {getAllUsers} [http-nio-8080-exec-4] END getAllUsers - Total users fetched: 9
+2025-03-14 12:58:02,537 INFO o.s.b.w.e.t.GracefulShutdown {shutDownGracefully} [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-14 12:58:02,612 INFO o.s.b.w.e.t.GracefulShutdown {doShutdown} [tomcat-shutdown] Graceful shutdown complete
+2025-03-14 12:58:02,646 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-14 12:58:02,674 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-03-14 12:58:02,693 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
