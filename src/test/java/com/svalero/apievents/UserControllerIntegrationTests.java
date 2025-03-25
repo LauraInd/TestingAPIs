@@ -11,6 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -32,9 +33,11 @@ public class UserControllerIntegrationTests {
 
     @BeforeEach
     void setUp() throws Exception {
+
+        mockMvc.perform(delete("/users/1"));
         validUser = new User();
         validUser.setName("Laura");
-        validUser.setEmail("laura@email.com");
+        validUser.setEmail("laura" + UUID.randomUUID() + "@email.com");
         validUser.setPassword("securePass123");
         validUser.setCreationDate(LocalDate.now());
         validUser.setActive(true);
@@ -63,7 +66,7 @@ public class UserControllerIntegrationTests {
 
     @Test
     void shouldReturn201_whenCreateValidUser() throws Exception {
-        validUser.setEmail("new@email.com"); // evitar duplicado
+        validUser.setEmail("new" + System.currentTimeMillis() + "@email.com");
         mockMvc.perform(post("/users")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(validUser)))
@@ -80,11 +83,34 @@ public class UserControllerIntegrationTests {
     }
 
     @Test
+    void shouldReturn200_whenGetUserByEmail() throws Exception {
+        mockMvc.perform(get("/users/email")
+                        .param("email", validUser.getEmail()))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.email").value(validUser.getEmail()));
+    }
+
+    @Test
     void shouldReturn404_whenGetUserByNonExistentEmail() throws Exception {
         mockMvc.perform(get("/users/email")
                         .param("email", "noexist@email.com"))
                 .andExpect(status().isNotFound());
     }
+
+    @Test
+    void shouldReturn200_whenGetActiveUsers() throws Exception {
+        mockMvc.perform(get("/users/active"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].active").value(true));
+    }
+
+   /* @Test
+    void shouldReturn400_whenCreateUserWithDuplicateEmail() throws Exception {
+        mockMvc.perform(post("/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(validUser)))
+                .andExpect(status().isBadRequest());
+    }*/
 
     @Test
     void shouldReturn404_whenUpdateNonExistentUser() throws Exception {
@@ -126,3 +152,4 @@ public class UserControllerIntegrationTests {
                 .andExpect(status().isNoContent());
     }
 }
+

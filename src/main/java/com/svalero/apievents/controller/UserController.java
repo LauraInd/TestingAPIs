@@ -3,6 +3,7 @@ package com.svalero.apievents.controller;
 import com.svalero.apievents.domain.User;
 import com.svalero.apievents.exception.UserNotFoundException;
 import com.svalero.apievents.service.UserService;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ public class UserController {
 
     // Agregar un nuevo usuario
     @PostMapping
-    public ResponseEntity<User> addUser(@RequestBody User user) {
+    public ResponseEntity<User> addUser(@Valid @RequestBody User user) {
         logger.info("BEGIN addUser - Adding user: {}", user.getEmail());
         User newUser = userService.saveUser(user);
         logger.info("END addUser - User added with ID: {}", newUser.getId());
@@ -46,7 +47,7 @@ public class UserController {
 
     // Buscar un usuario por email
     @GetMapping("/email")
-    public ResponseEntity<User> getUserByEmail(@RequestParam String email) {
+    public ResponseEntity<User> getUserByEmail(@RequestParam String email) throws UserNotFoundException {
         logger.info("BEGIN getUserByEmail - Searching user with email: {}", email);
         User user = userService.getUserByEmail(email);
         logger.info("END getUserByEmail - User found: {}", user.getId());

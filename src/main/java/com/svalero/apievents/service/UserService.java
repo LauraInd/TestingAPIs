@@ -27,8 +27,13 @@ public class UserService {
     }
 
     // Buscar un usuario por email
-    public User getUserByEmail(String email) {
-        return userRepository.findByEmail(email);
+    //public User getUserByEmail(String email) {return userRepository.findByEmail(email);}
+    public User getUserByEmail(String email) throws UserNotFoundException {
+        User user = userRepository.findByEmail(email);
+        if (user == null) {
+            throw new UserNotFoundException("User not found with email: " + email);
+        }
+        return user;
     }
 
     // Obtener usuarios activos

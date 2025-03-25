@@ -52,7 +52,7 @@ class UserServiceTests {
 
     // 📌 Test para obtener un usuario por email
     @Test
-    void testGetUserByEmail() {
+    void testGetUserByEmail() throws UserNotFoundException {
         when(userRepository.findByEmail("johndoe@example.com")).thenReturn(user);
 
         User result = userService.getUserByEmail("johndoe@example.com");
