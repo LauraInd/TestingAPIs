@@ -1,7 +1,10 @@
 package com.svalero.apievents.controller;
 
+import com.svalero.apievents.domain.Event;
 import com.svalero.apievents.domain.Reservation;
+import com.svalero.apievents.domain.dto.ReservationDto;
 import com.svalero.apievents.exception.ReservationNotFoundException;
+import com.svalero.apievents.service.EventService;
 import com.svalero.apievents.service.ReservationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,10 +24,13 @@ public class ReservationController {
     private final Logger logger = LoggerFactory.getLogger(ReservationController.class);
 
     private final ReservationService reservationService;
+    private final EventService eventService;
+
 
     @Autowired
-    public ReservationController(ReservationService reservationService) {
+    public ReservationController(ReservationService reservationService, EventService eventService) {
         this.reservationService = reservationService;
+        this.eventService = eventService;
     }
 
     // Obtener todas las reservas
@@ -38,12 +44,27 @@ public class ReservationController {
 
     // Agregar una nueva reserva
     @PostMapping
-    public ResponseEntity<Reservation> addReservation(@RequestBody Reservation reservation) {
+   public ResponseEntity<Reservation> addReservation(@RequestBody Reservation reservation) {
         logger.info("BEGIN addReservation - Adding reservation for customer: {}", reservation.getCustomerName());
         Reservation newReservation = reservationService.saveReservation(reservation);
         logger.info("END addReservation - Reservation added with ID: {}", newReservation.getId());
         return new ResponseEntity<>(newReservation, HttpStatus.CREATED);
     }
+   /* public ResponseEntity<Reservation> addReservation(@RequestBody ReservationDto reservationDto) {
+        Event event = eventService.getEventById(reservationDto.getEventId());
+
+        Reservation reservation = new Reservation();
+        reservation.setName(reservationDto.getName());
+        reservation.setCustomerName(reservationDto.getCustomerName());
+        reservation.setEmail(reservationDto.getEmail());
+        reservation.setReservationDate(reservationDto.getReservationDate());
+        reservation.setQuantity(reservationDto.getQuantity());
+        reservation.setEvent(event); // ahora es un objeto gestionado
+
+        Reservation newReservation = reservationService.saveReservation(reservation);
+        return new ResponseEntity<>(newReservation, HttpStatus.CREATED);
+    } */
+
 
     // Buscar reservas por nombre del cliente
     @GetMapping("/customer")

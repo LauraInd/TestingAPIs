@@ -19,7 +19,7 @@ public class Reservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(nullable = false, unique = true)
     private String name;
     @NotNull(message = "Customer name is required")
@@ -37,4 +37,15 @@ public class Reservation {
     @ManyToOne
     @JoinColumn(name = "event_id", nullable = false)
     private Event event;
+
+    public String getCustomerName() {
+        return this.customerName;
+    }
+
+    public Long getId() {
+        return this.id;
+    }
+
 }
+
+

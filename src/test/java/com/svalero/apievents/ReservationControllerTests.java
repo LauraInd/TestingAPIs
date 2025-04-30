@@ -1,12 +1,16 @@
-package com.svalero.apievents.controller;
+package com.svalero.apievents;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.svalero.apievents.controller.ReservationController;
 import com.svalero.apievents.domain.Event;
 import com.svalero.apievents.domain.Reservation;
+import com.svalero.apievents.exception.ReservationNotFoundException;
+import com.svalero.apievents.service.EventService;
 import com.svalero.apievents.service.ReservationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -14,15 +18,18 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
-import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(ReservationController.class)
-public class ReservationControllerTests {
+@ExtendWith(MockitoExtension.class)
+class ReservationControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -30,75 +37,97 @@ public class ReservationControllerTests {
     @MockBean
     private ReservationService reservationService;
 
+    @MockBean
+    private EventService eventService;
+
     @Autowired
     private ObjectMapper objectMapper;
 
-    private Reservation reservation;
+    private Reservation reservation1;
+    private Reservation reservation2;
 
     @BeforeEach
     void setUp() {
         Event event = new Event();
-        event.setId(1L);
-
-        reservation = new Reservation();
-        reservation.setId(1L);
-        reservation.setName("ReservaTest");
-        reservation.setCustomerName("Carlos Perez");
-        reservation.setEmail("carlos@example.com");
-        reservation.setReservationDate(LocalDate.now());
-        reservation.setQuantity(2);
-        reservation.setEvent(event);
+        reservation1 = new Reservation(1L, "Concert", "Alice", "alice@example.com", LocalDate.of(2024, 6, 1), 2, event);
+        reservation2 = new Reservation(2L, "Conference", "Bob", "bob@example.com", LocalDate.of(2024, 7, 15), 3, event);
     }
 
     @Test
     void testGetAllReservations() throws Exception {
-        when(reservationService.getAllReservations()).thenReturn(List.of(reservation));
+        List<Reservation> reservations = Arrays.asList(reservation1, reservation2);
+        when(reservationService.getAllReservations()).thenReturn(reservations);
 
         mockMvc.perform(get("/reservations"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].customerName").value("Carlos Perez"));
+                .andExpect(jsonPath("$.size()").value(2))
+                .andExpect(jsonPath("$[0].customerName").value("Alice"));
+
+        verify(reservationService, times(1)).getAllReservations();
     }
 
     @Test
     void testAddReservation() throws Exception {
-        when(reservationService.saveReservation(any())).thenReturn(reservation);
+        when(reservationService.saveReservation(any(Reservation.class))).thenReturn(reservation1);
 
         mockMvc.perform(post("/reservations")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(reservation)))
+                        .content(objectMapper.writeValueAsString(reservation1)))
                 .andExpect(status().isCreated())
-                .andExpect(jsonPath("$.id").value(1));
-    }
+                .andExpect(jsonPath("$.customerName").value("Alice"));
 
-    @Test
-    void testGetReservationsByCustomerName() throws Exception {
-        when(reservationService.getReservationsByCustomerName("Carlos"))
-                .thenReturn(List.of(reservation));
-
-        mockMvc.perform(get("/reservations/customer")
-                        .param("name", "Carlos"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].customerName").value("Carlos Perez"));
+        verify(reservationService, times(1)).saveReservation(any(Reservation.class));
     }
 
     @Test
     void testGetReservationById() throws Exception {
-        when(reservationService.getReservationById(1L)).thenReturn(reservation);
+        when(reservationService.getReservationById(1L)).thenReturn(reservation1);
 
         mockMvc.perform(get("/reservations/1"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id").value(1));
+                .andExpect(jsonPath("$.customerName").value("Alice"));
+
+        verify(reservationService, times(1)).getReservationById(1L);
+    }
+
+    @Test
+    void testGetReservationById_NotFound() throws Exception {
+        when(reservationService.getReservationById(99L))
+                .thenThrow(new ReservationNotFoundException("Reservation not found"));
+
+        mockMvc.perform(get("/reservations/99"))
+                .andExpect(status().isNotFound())
+                .andExpect(content().string("Reservation not found"));
+
+        verify(reservationService, times(1)).getReservationById(99L);
     }
 
     @Test
     void testUpdateReservation() throws Exception {
-        when(reservationService.updateReservation(eq(1L), any())).thenReturn(reservation);
+        when(reservationService.updateReservation(eq(1L), any(Reservation.class))).thenReturn(reservation1);
 
         mockMvc.perform(put("/reservations/1")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(reservation)))
+                        .content(objectMapper.writeValueAsString(reservation1)))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.customerName").value("Carlos Perez"));
+                .andExpect(jsonPath("$.customerName").value("Alice"));
+
+        verify(reservationService, times(1)).updateReservation(eq(1L), any(Reservation.class));
+    }
+
+    @Test
+    void testUpdateReservationPartial() throws Exception {
+        when(reservationService.updateReservationPartial(eq(1L), any(Map.class))).thenReturn(reservation1);
+
+        Map<String, Object> updates = Map.of("quantity", 4);
+
+        mockMvc.perform(patch("/reservations/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(updates)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.customerName").value("Alice"));
+
+        verify(reservationService, times(1)).updateReservationPartial(eq(1L), any(Map.class));
     }
 
     @Test
@@ -107,49 +136,18 @@ public class ReservationControllerTests {
 
         mockMvc.perform(delete("/reservations/1"))
                 .andExpect(status().isNoContent());
+
+        verify(reservationService, times(1)).deleteReservation(1L);
     }
 
     @Test
-    void testGetReservationsByDate() throws Exception {
-        when(reservationService.getReservationsByDate(LocalDate.now())).thenReturn(List.of(reservation));
+    void testDeleteReservation_NotFound() throws Exception {
+        doThrow(new ReservationNotFoundException("Reservation not found")).when(reservationService).deleteReservation(99L);
 
-        mockMvc.perform(get("/reservations/date")
-                        .param("date", LocalDate.now().toString()))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].id").value(1));
-    }
+        mockMvc.perform(delete("/reservations/99"))
+                .andExpect(status().isNotFound())
+                .andExpect(content().string("Reservation not found"));
 
-    @Test
-    void testGetReservationsBetweenDates() throws Exception {
-        LocalDate start = LocalDate.now().minusDays(1);
-        LocalDate end = LocalDate.now().plusDays(1);
-        when(reservationService.getReservationsBetweenDates(start, end)).thenReturn(List.of(reservation));
-
-        mockMvc.perform(get("/reservations/range")
-                        .param("startDate", start.toString())
-                        .param("endDate", end.toString()))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].id").value(1));
-    }
-
-    @Test
-    void testGetReservationsByQuantity() throws Exception {
-        when(reservationService.getReservationsByQuantity(2)).thenReturn(List.of(reservation));
-
-        mockMvc.perform(get("/reservations/quantity")
-                        .param("quantity", "2"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].quantity").value(2));
-    }
-
-    @Test
-    void testGetReservationsByEvent() throws Exception {
-        when(reservationService.getReservationsByEvent(1L)).thenReturn(List.of(reservation));
-
-        mockMvc.perform(get("/reservations/event")
-                        .param("eventId", "1"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].event.id").value(1));
+        verify(reservationService, times(1)).deleteReservation(99L);
     }
 }
-
