@@ -20,7 +20,7 @@ import java.util.List;
 public class EventCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @NotNull(message = "Name  is required")
     @Column(nullable = false, unique = true)
     private String name;
