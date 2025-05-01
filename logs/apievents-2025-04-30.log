@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 2025-04-30 18:58:07,390 INFO o.h.v.i.u.Version {<clinit>} [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
 2025-04-30 18:58:07,431 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting EventCategoryRepositoryTests using Java 23.0.2 with PID 32725 (started by lauraindia in /Users/lauraindia/Desktop/DAM/AccesoDatos/apievents)
 2025-04-30 18:58:07,433 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
@@ -86,95 +85,6 @@
 2025-04-30 18:58:13,340 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started UserControllerTest in 0.252 seconds (process running for 7.903)
 2025-04-30 18:58:13,364 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 99
 2025-04-30 18:58:13,364 ERROR c.s.a.c.UserController {updateUser} [main] Error in updateUser - User not found with ID: 99
-=======
-2025-05-01 12:35:55,456 INFO o.h.v.i.u.Version {<clinit>} [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-05-01 12:35:55,497 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting EventCategoryRepositoryTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:35:55,498 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:35:55,883 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-01 12:35:55,955 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
-2025-05-01 12:35:56,027 INFO o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor {process} [main] Replacing 'dataSource' DataSource bean with embedded version
-2025-05-01 12:35:56,181 INFO o.s.j.d.e.EmbeddedDatabaseFactory {initDatabase} [main] Starting embedded database: url='jdbc:h2:mem:4669d228-457a-4597-a3f8-34cd88317302;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2025-05-01 12:35:56,478 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-01 12:35:56,556 INFO o.h.Version {logVersion} [main] HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-05-01 12:35:56,594 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
-2025-05-01 12:35:56,939 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-01 12:35:57,003 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-01 12:35:58,020 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-01 12:35:58,096 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-01 12:35:58,524 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started EventCategoryRepositoryTests in 3.513 seconds (process running for 4.799)
-2025-05-01 12:35:59,417 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.EventCategoryControllerTests]: EventCategoryControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:35:59,434 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.EventCategoryControllerTests
-2025-05-01 12:35:59,469 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting EventCategoryControllerTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:35:59,470 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:00,219 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:00,219 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:00,221 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 1 ms
-2025-05-01 12:36:00,233 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started EventCategoryControllerTests in 0.79 seconds (process running for 6.508)
-2025-05-01 12:36:00,384 INFO c.s.a.c.EventCategoryController {addCategory} [main] BEGIN addCategory - Adding new category: Music
-2025-05-01 12:36:00,387 INFO c.s.a.c.EventCategoryController {addCategory} [main] END addCategory - Category added with ID: 1
-2025-05-01 12:36:00,454 INFO c.s.a.c.EventCategoryController {getCategoriesByCreationDate} [main] BEGIN getCategoriesByCreationDate - Searching categories created on: 2024-01-01
-2025-05-01 12:36:00,455 INFO c.s.a.c.EventCategoryController {getCategoriesByCreationDate} [main] END getCategoriesByCreationDate - Total categories found: 1
-2025-05-01 12:36:00,478 INFO c.s.a.c.EventCategoryController {getAllCategories} [main] BEGIN getAllCategories
-2025-05-01 12:36:00,479 INFO c.s.a.c.EventCategoryController {getAllCategories} [main] END getAllCategories - Total categories fetched: 1
-2025-05-01 12:36:00,486 INFO c.s.a.c.EventCategoryController {getActiveCategories} [main] BEGIN getActiveCategories - Fetching active categories
-2025-05-01 12:36:00,487 INFO c.s.a.c.EventCategoryController {getActiveCategories} [main] END getActiveCategories - Total active categories found: 1
-2025-05-01 12:36:00,493 INFO c.s.a.c.EventCategoryController {getCategoriesWithMinEvents} [main] BEGIN getCategoriesWithMinEvents - Searching categories with at least 5 events
-2025-05-01 12:36:00,494 INFO c.s.a.c.EventCategoryController {getCategoriesWithMinEvents} [main] END getCategoriesWithMinEvents - Total categories found: 1
-2025-05-01 12:36:00,499 INFO c.s.a.c.EventCategoryController {getInactiveCategories} [main] BEGIN getInactiveCategories - Fetching inactive categories
-2025-05-01 12:36:00,500 INFO c.s.a.c.EventCategoryController {getInactiveCategories} [main] END getInactiveCategories - Total inactive categories found: 0
-2025-05-01 12:36:00,517 INFO c.s.a.c.EventCategoryController {updateEventCategory} [main] BEGIN updateEventCategoryPartial - Partially updating category with ID: 1
-2025-05-01 12:36:00,517 INFO c.s.a.c.EventCategoryController {updateEventCategory} [main] END updateEventCategoryPartial - Category updated with ID: 1
-2025-05-01 12:36:00,525 INFO c.s.a.c.EventCategoryController {updateCategory} [main] BEGIN updateCategory - Updating category with ID: 1
-2025-05-01 12:36:00,526 INFO c.s.a.c.EventCategoryController {updateCategory} [main] END updateCategory - Category updated with ID: 1
-2025-05-01 12:36:00,532 INFO c.s.a.c.EventCategoryController {deleteCategory} [main] BEGIN deleteCategory - Deleting category with ID: 1
-2025-05-01 12:36:00,533 INFO c.s.a.c.EventCategoryController {deleteCategory} [main] END deleteCategory - Category deleted with ID: 1
-2025-05-01 12:36:00,540 INFO c.s.a.c.EventCategoryController {getCategoryById} [main] BEGIN getCategoryById - Fetching category with ID: 1
-2025-05-01 12:36:00,542 INFO c.s.a.c.EventCategoryController {getCategoryById} [main] END getCategoryById - Category found: 1
-2025-05-01 12:36:00,555 INFO c.s.a.c.EventCategoryController {getCategoriesByName} [main] BEGIN getCategoriesByName - Searching categories with name: Music
-2025-05-01 12:36:00,556 INFO c.s.a.c.EventCategoryController {getCategoriesByName} [main] END getCategoriesByName - Total categories found: 1
-2025-05-01 12:36:00,569 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.PaymentControllerTests]: PaymentControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:00,582 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.PaymentControllerTests
-2025-05-01 12:36:00,606 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting PaymentControllerTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:36:00,606 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:00,847 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:00,847 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:00,848 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 1 ms
-2025-05-01 12:36:00,853 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started PaymentControllerTests in 0.267 seconds (process running for 7.128)
-2025-05-01 12:36:00,862 INFO c.s.a.c.PaymentController {updatePayment} [main] BEGIN updatePaymentPartial - Partially updating payment with ID: 1
-2025-05-01 12:36:00,862 INFO c.s.a.c.PaymentController {updatePayment} [main] END updatePaymentPartial - Payment updated with ID: 1
-2025-05-01 12:36:00,877 INFO c.s.a.c.PaymentController {getPaymentsByAmount} [main] BEGIN getPaymentsByAmount - Searching payments with minimum amount: 100.0
-2025-05-01 12:36:00,877 INFO c.s.a.c.PaymentController {getPaymentsByAmount} [main] END getPaymentsByAmount - Total payments found: 1
-2025-05-01 12:36:00,889 INFO c.s.a.c.PaymentController {updatePayment} [main] BEGIN updatePayment - Updating payment with ID: 1
-2025-05-01 12:36:00,889 INFO c.s.a.c.PaymentController {updatePayment} [main] END updatePayment - Payment updated with ID: 1
-2025-05-01 12:36:00,895 INFO c.s.a.c.PaymentController {getAllPayments} [main] BEGIN getAllPayments
-2025-05-01 12:36:00,895 INFO c.s.a.c.PaymentController {getAllPayments} [main] END getAllPayments - Total payments fetched: 1
-2025-05-01 12:36:00,901 INFO c.s.a.c.PaymentController {getPaymentsByStatus} [main] BEGIN getPaymentsByStatus - Searching payments with status: PAID
-2025-05-01 12:36:00,902 INFO c.s.a.c.PaymentController {getPaymentsByStatus} [main] END getPaymentsByStatus - Total payments found: 1
-2025-05-01 12:36:00,907 INFO c.s.a.c.PaymentController {getPaymentsByDate} [main] BEGIN getPaymentsByDate - Searching payments for date: 2025-05-01
-2025-05-01 12:36:00,907 INFO c.s.a.c.PaymentController {getPaymentsByDate} [main] END getPaymentsByDate - Total payments found: 1
-2025-05-01 12:36:00,914 INFO c.s.a.c.PaymentController {addPayment} [main] BEGIN addPayment - Adding payment for reservation ID: 1
-2025-05-01 12:36:00,914 INFO c.s.a.c.PaymentController {addPayment} [main] END addPayment - Payment added with ID: 1
-2025-05-01 12:36:00,919 INFO c.s.a.c.PaymentController {getPaymentById} [main] BEGIN getPaymentById - Fetching payment with ID: 1
-2025-05-01 12:36:00,920 INFO c.s.a.c.PaymentController {getPaymentById} [main] END getPaymentById - Payment found: 1
-2025-05-01 12:36:00,925 INFO c.s.a.c.PaymentController {deletePayment} [main] BEGIN deletePayment - Deleting payment with ID: 1
-2025-05-01 12:36:00,925 INFO c.s.a.c.PaymentController {deletePayment} [main] END deletePayment - Payment deleted with ID: 1
-2025-05-01 12:36:00,931 INFO c.s.a.c.PaymentController {getPaymentsBetweenDates} [main] BEGIN getPaymentsBetweenDates - Searching payments between 2025-04-30 and 2025-05-02
-2025-05-01 12:36:00,931 INFO c.s.a.c.PaymentController {getPaymentsBetweenDates} [main] END getPaymentsBetweenDates - Total payments found: 1
-2025-05-01 12:36:00,936 INFO c.s.a.c.PaymentController {getPaymentsByReservation} [main] BEGIN getPaymentsByReservation - Searching payments for reservation ID: 1
-2025-05-01 12:36:00,936 INFO c.s.a.c.PaymentController {getPaymentsByReservation} [main] END getPaymentsByReservation - Total payments found: 1
-2025-05-01 12:36:00,944 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.PaymentRepositoryTests]: PaymentRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:00,952 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.PaymentRepositoryTests
-2025-05-01 12:36:01,051 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:01,059 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.UserControllerTest
-2025-05-01 12:36:01,077 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting UserControllerTest using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:36:01,077 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:01,266 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:01,267 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:01,267 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 0 ms
-2025-05-01 12:36:01,272 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started UserControllerTest in 0.21 seconds (process running for 7.547)
-2025-05-01 12:36:01,294 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 99
-2025-05-01 12:36:01,295 ERROR c.s.a.c.UserController {updateUser} [main] Error in updateUser - User not found with ID: 99
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found
 	at com.svalero.apievents.service.UserService.updateUser(UserService.java:51)
 	at com.svalero.apievents.controller.UserController.updateUser(UserController.java:71)
@@ -279,7 +189,6 @@ com.svalero.apievents.exception.UserNotFoundException: User not found
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:13,381 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: johndoe@example.com
 2025-04-30 18:58:13,381 INFO c.s.a.c.UserController {getUserByEmail} [main] END getUserByEmail - User found: 1
 2025-04-30 18:58:13,400 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: johndoe@example.com
@@ -296,24 +205,6 @@ com.svalero.apievents.exception.UserNotFoundException: User not found
 2025-04-30 18:58:13,447 INFO c.s.a.c.UserController {getActiveUsers} [main] END getActiveUsers - Total active users fetched: 1
 2025-04-30 18:58:13,456 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 99
 2025-04-30 18:58:13,457 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 99
-=======
-2025-05-01 12:36:01,311 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: johndoe@example.com
-2025-05-01 12:36:01,312 INFO c.s.a.c.UserController {getUserByEmail} [main] END getUserByEmail - User found: 1
-2025-05-01 12:36:01,330 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: johndoe@example.com
-2025-05-01 12:36:01,331 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 1
-2025-05-01 12:36:01,337 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 1
-2025-05-01 12:36:01,337 INFO c.s.a.c.UserController {updateUser} [main] END updateUser - User updated with ID: 1
-2025-05-01 12:36:01,344 INFO c.s.a.c.UserController {getAllUsers} [main] BEGIN getAllUsers
-2025-05-01 12:36:01,344 INFO c.s.a.c.UserController {getAllUsers} [main] END getAllUsers - Total users fetched: 2
-2025-05-01 12:36:01,357 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUserPartial - Partially updating user with ID: 1
-2025-05-01 12:36:01,357 INFO c.s.a.c.UserController {updateUser} [main] END updateUserPartial - User updated with ID: 1
-2025-05-01 12:36:01,364 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:01,365 INFO c.s.a.c.UserController {deleteUser} [main] END deleteUser - User deleted with ID: 1
-2025-05-01 12:36:01,370 INFO c.s.a.c.UserController {getActiveUsers} [main] BEGIN getActiveUsers - Fetching active users
-2025-05-01 12:36:01,371 INFO c.s.a.c.UserController {getActiveUsers} [main] END getActiveUsers - Total active users fetched: 1
-2025-05-01 12:36:01,378 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 99
-2025-05-01 12:36:01,379 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 99
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:78)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -418,7 +309,6 @@ com.svalero.apievents.exception.UserNotFoundException: User not found
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:13,464 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.UserRepositoryTests]: UserRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
 2025-04-30 18:58:13,474 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.UserRepositoryTests
 2025-04-30 18:58:13,518 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.ReservationControllerIntegrationTests]: ReservationControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
@@ -437,26 +327,6 @@ com.svalero.apievents.exception.UserNotFoundException: User not found
 2025-04-30 18:58:13,861 INFO c.s.a.c.ReservationController {addReservation} [main] END addReservation - Reservation added with ID: 1
 2025-04-30 18:58:13,867 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 99
 2025-04-30 18:58:13,868 ERROR c.s.a.c.ReservationController {getReservationById} [main] Error in getReservationById - Reservation not found with ID: 99
-=======
-2025-05-01 12:36:01,387 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.UserRepositoryTests]: UserRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:01,420 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.UserRepositoryTests
-2025-05-01 12:36:01,462 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.ReservationControllerIntegrationTests]: ReservationControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:01,471 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.ReservationControllerIntegrationTests
-2025-05-01 12:36:01,491 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting ReservationControllerIntegrationTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:36:01,491 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:01,740 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:01,755 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:01,756 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 1 ms
-2025-05-01 12:36:01,761 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started ReservationControllerIntegrationTests in 0.288 seconds (process running for 8.035)
-2025-05-01 12:36:01,768 INFO c.s.a.c.ReservationController {getAllReservations} [main] BEGIN getAllReservations
-2025-05-01 12:36:01,768 INFO c.s.a.c.ReservationController {getAllReservations} [main] END getAllReservations - Total reservations fetched: 2
-2025-05-01 12:36:01,782 INFO c.s.a.c.ReservationController {updateReservation} [main] BEGIN updateReservationPartial - Partially updating reservation with ID: 1
-2025-05-01 12:36:01,783 INFO c.s.a.c.ReservationController {updateReservation} [main] END updateReservationPartial - Reservation updated with ID: 1
-2025-05-01 12:36:01,789 INFO c.s.a.c.ReservationController {addReservation} [main] BEGIN addReservation - Adding reservation for customer: Alice
-2025-05-01 12:36:01,790 INFO c.s.a.c.ReservationController {addReservation} [main] END addReservation - Reservation added with ID: 1
-2025-05-01 12:36:01,796 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 99
-2025-05-01 12:36:01,796 ERROR c.s.a.c.ReservationController {getReservationById} [main] Error in getReservationById - Reservation not found with ID: 99
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found with id: 99
 	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
 	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
@@ -561,11 +431,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:13,870 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found with id: 99
-=======
-2025-05-01 12:36:01,799 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found with id: 99
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found with id: 99
 	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
 	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
@@ -670,7 +536,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:13,877 INFO c.s.a.c.ReservationController {deleteReservation} [main] BEGIN deleteReservation - Deleting reservation with ID: 1
 2025-04-30 18:58:13,878 INFO c.s.a.c.ReservationController {deleteReservation} [main] END deleteReservation - Reservation deleted with ID: 1
 2025-04-30 18:58:13,882 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 1
@@ -708,45 +573,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 2025-04-30 18:58:15,625 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started UserControllerIntegrationTests in 1.274 seconds (process running for 10.188)
 2025-04-30 18:58:15,632 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:15,924 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:01,807 INFO c.s.a.c.ReservationController {deleteReservation} [main] BEGIN deleteReservation - Deleting reservation with ID: 1
-2025-05-01 12:36:01,807 INFO c.s.a.c.ReservationController {deleteReservation} [main] END deleteReservation - Reservation deleted with ID: 1
-2025-05-01 12:36:01,812 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 1
-2025-05-01 12:36:01,813 INFO c.s.a.c.ReservationController {getReservationById} [main] END getReservationById - Reservation found: 1
-2025-05-01 12:36:01,820 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.ReservationRepositoryTests]: ReservationRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:01,829 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.ReservationRepositoryTests
-2025-05-01 12:36:02,270 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.UserControllerIntegrationTests]: UserControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:02,273 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.UserControllerIntegrationTests
-2025-05-01 12:36:02,297 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting UserControllerIntegrationTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:36:02,297 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:02,475 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-01 12:36:02,486 INFO o.s.d.r.c.RepositoryConfigurationDelegate {registerRepositoriesIn} [main] Finished Spring Data repository scanning in 10 ms. Found 5 JPA repository interfaces.
-2025-05-01 12:36:02,802 INFO o.s.b.w.e.t.TomcatWebServer {initialize} [main] Tomcat initialized with port 0 (http)
-2025-05-01 12:36:02,815 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing ProtocolHandler ["http-nio-auto-1"]
-2025-05-01 12:36:02,818 INFO o.a.j.l.DirectJDKLog {log} [main] Starting service [Tomcat]
-2025-05-01 12:36:02,819 INFO o.a.j.l.DirectJDKLog {log} [main] Starting Servlet engine: [Apache Tomcat/10.1.30]
-2025-05-01 12:36:02,864 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring embedded WebApplicationContext
-2025-05-01 12:36:02,864 INFO o.s.b.w.s.c.ServletWebServerApplicationContext {prepareWebApplicationContext} [main] Root WebApplicationContext: initialization completed in 565 ms
-2025-05-01 12:36:02,884 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Starting...
-2025-05-01 12:36:02,936 INFO c.z.h.p.HikariPool {checkFailFast} [main] HikariPool-1 - Added connection conn28: url=jdbc:h2:file:~/users.db user=SA
-2025-05-01 12:36:02,938 INFO c.z.h.HikariDataSource {getConnection} [main] HikariPool-1 - Start completed.
-2025-05-01 12:36:02,947 INFO o.s.b.a.h.H2ConsoleAutoConfiguration {logDataSources} [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/users.db'
-2025-05-01 12:36:03,005 INFO o.h.j.i.u.LogHelper {logPersistenceUnitInformation} [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-01 12:36:03,007 INFO o.h.c.i.RegionFactoryInitiator {initiateService} [main] HHH000026: Second-level cache disabled
-2025-05-01 12:36:03,013 INFO o.s.o.j.p.SpringPersistenceUnitInfo {addTransformer} [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-01 12:36:03,014 WARN o.h.e.j.d.i.DialectFactoryImpl {constructDialect} [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-01 12:36:03,140 INFO o.h.e.t.j.p.i.JtaPlatformInitiator {initiateService} [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-01 12:36:03,161 INFO o.s.o.j.AbstractEntityManagerFactoryBean {buildNativeEntityManagerFactory} [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-01 12:36:03,289 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration {openEntityManagerInViewInterceptor} [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-01 12:36:03,415 INFO o.a.j.l.DirectJDKLog {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:03,415 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:03,416 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 0 ms
-2025-05-01 12:36:03,440 INFO o.a.j.l.DirectJDKLog {log} [main] Starting ProtocolHandler ["http-nio-auto-1"]
-2025-05-01 12:36:03,518 INFO o.s.b.w.e.t.TomcatWebServer {start} [main] Tomcat started on port 54607 (http) with context path '/'
-2025-05-01 12:36:03,522 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started UserControllerIntegrationTests in 1.245 seconds (process running for 9.797)
-2025-05-01 12:36:03,534 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,795 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -855,21 +681,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:15,936 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura2f4f1cda-3c52-41e9-becc-f10318d33a46@email.com
 2025-04-30 18:58:15,941 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 395
 2025-04-30 18:58:15,947 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUserPartial - Partially updating user with ID: 395
 2025-04-30 18:58:15,975 INFO c.s.a.c.UserController {updateUser} [main] END updateUserPartial - User updated with ID: 395
 2025-04-30 18:58:15,981 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:15,984 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,805 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura7e0e9170-fb3a-495b-89b4-e5b28824d82d@email.com
-2025-05-01 12:36:03,819 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 431
-2025-05-01 12:36:03,823 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUserPartial - Partially updating user with ID: 431
-2025-05-01 12:36:03,843 INFO c.s.a.c.UserController {updateUser} [main] END updateUserPartial - User updated with ID: 431
-2025-05-01 12:36:03,847 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,849 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -978,21 +795,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:15,986 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura27a1c3b2-0abb-47dc-a5f4-52dbc1c42b3d@email.com
 2025-04-30 18:58:15,988 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 396
 2025-04-30 18:58:15,991 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 396
 2025-04-30 18:58:16,000 INFO c.s.a.c.UserController {deleteUser} [main] END deleteUser - User deleted with ID: 396
 2025-04-30 18:58:16,004 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,006 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,851 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura58f2b9db-c4e6-49d4-8be7-ab0b53512bc2@email.com
-2025-05-01 12:36:03,853 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 432
-2025-05-01 12:36:03,855 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 432
-2025-05-01 12:36:03,863 INFO c.s.a.c.UserController {deleteUser} [main] END deleteUser - User deleted with ID: 432
-2025-05-01 12:36:03,866 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,867 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1101,21 +909,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,008 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura4a69f78d-410d-4365-a1c0-8c6be39f6cd0@email.com
 2025-04-30 18:58:16,010 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 397
 2025-04-30 18:58:16,013 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: new1746032296012@email.com
 2025-04-30 18:58:16,016 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 398
 2025-04-30 18:58:16,022 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,023 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,870 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laurae2dedf19-ae37-438a-bdee-92830a9f9427@email.com
-2025-05-01 12:36:03,871 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 433
-2025-05-01 12:36:03,874 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: new1746095763873@email.com
-2025-05-01 12:36:03,875 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 434
-2025-05-01 12:36:03,880 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,882 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1224,21 +1023,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,027 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laurab7feae1a-fab3-4f63-9bfa-0235fee27302@email.com
 2025-04-30 18:58:16,028 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 399
 2025-04-30 18:58:16,031 INFO c.s.a.c.UserController {getAllUsers} [main] BEGIN getAllUsers
 2025-04-30 18:58:16,073 INFO c.s.a.c.UserController {getAllUsers} [main] END getAllUsers - Total users fetched: 326
 2025-04-30 18:58:16,094 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,095 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,884 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura4db26cbd-036d-442e-baeb-97cf8cb08870@email.com
-2025-05-01 12:36:03,886 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 435
-2025-05-01 12:36:03,888 INFO c.s.a.c.UserController {getAllUsers} [main] BEGIN getAllUsers
-2025-05-01 12:36:03,926 INFO c.s.a.c.UserController {getAllUsers} [main] END getAllUsers - Total users fetched: 359
-2025-05-01 12:36:03,939 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,941 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1347,17 +1137,10 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,100 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura09a593f1-617b-48cd-b741-771155e3834f@email.com
 2025-04-30 18:58:16,102 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 400
 2025-04-30 18:58:16,107 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: noexist@email.com
 2025-04-30 18:58:16,111 ERROR c.s.a.c.UserController {handleUserNotFoundException} [main] Handling UserNotFoundException - User not found with email: noexist@email.com
-=======
-2025-05-01 12:36:03,943 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: lauradfb89fb0-9464-4371-bea5-7f866f64ffcf@email.com
-2025-05-01 12:36:03,945 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 436
-2025-05-01 12:36:03,955 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: noexist@email.com
-2025-05-01 12:36:03,958 ERROR c.s.a.c.UserController {handleUserNotFoundException} [main] Handling UserNotFoundException - User not found with email: noexist@email.com
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with email: noexist@email.com
 	at com.svalero.apievents.service.UserService.getUserByEmail(UserService.java:34)
 	at com.svalero.apievents.controller.UserController.getUserByEmail(UserController.java:52)
@@ -1462,13 +1245,8 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with email
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,117 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,119 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,963 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,964 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1577,17 +1355,10 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,122 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laurac80bdc85-6ce8-45e8-aa28-712afd7d1dc2@email.com
 2025-04-30 18:58:16,125 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 401
 2025-04-30 18:58:16,129 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 999
 2025-04-30 18:58:16,130 ERROR c.s.a.c.UserController {updateUser} [main] Error in updateUser - User not found with ID: 999
-=======
-2025-05-01 12:36:03,967 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura68e12f03-a47f-4d30-a5d4-ab8112d002bf@email.com
-2025-05-01 12:36:03,969 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 437
-2025-05-01 12:36:03,990 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 999
-2025-05-01 12:36:03,992 ERROR c.s.a.c.UserController {updateUser} [main] Error in updateUser - User not found with ID: 999
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 999
 	at com.svalero.apievents.service.UserService.lambda$updateUser$0(UserService.java:52)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
@@ -1694,13 +1465,8 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 9
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,144 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,146 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:03,997 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:03,999 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1809,21 +1575,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,149 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura5d7b2eb9-376f-4766-8454-c73bcaf6770c@email.com
 2025-04-30 18:58:16,152 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 402
 2025-04-30 18:58:16,156 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 402
 2025-04-30 18:58:16,159 INFO c.s.a.c.UserController {updateUser} [main] END updateUser - User updated with ID: 402
 2025-04-30 18:58:16,163 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,165 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:04,001 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura26099fec-4a63-4ece-a70b-bf73f535c7df@email.com
-2025-05-01 12:36:04,002 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 438
-2025-05-01 12:36:04,005 INFO c.s.a.c.UserController {updateUser} [main] BEGIN updateUser - Updating user with ID: 438
-2025-05-01 12:36:04,007 INFO c.s.a.c.UserController {updateUser} [main] END updateUser - User updated with ID: 438
-2025-05-01 12:36:04,012 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:04,013 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -1932,21 +1689,12 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,168 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura7e85466a-c26e-4b36-9c62-0896fc0706a0@email.com
 2025-04-30 18:58:16,170 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 403
 2025-04-30 18:58:16,172 INFO c.s.a.c.UserController {getActiveUsers} [main] BEGIN getActiveUsers - Fetching active users
 2025-04-30 18:58:16,199 INFO c.s.a.c.UserController {getActiveUsers} [main] END getActiveUsers - Total active users fetched: 300
 2025-04-30 18:58:16,216 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,219 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:04,016 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: lauraa774ba57-ed95-4a5c-95c2-6bb906d1f5ac@email.com
-2025-05-01 12:36:04,018 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 439
-2025-05-01 12:36:04,019 INFO c.s.a.c.UserController {getActiveUsers} [main] BEGIN getActiveUsers - Fetching active users
-2025-05-01 12:36:04,041 INFO c.s.a.c.UserController {getActiveUsers} [main] END getActiveUsers - Total active users fetched: 330
-2025-05-01 12:36:04,053 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:04,054 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -2055,19 +1803,11 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,221 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura294367da-cb3a-4c95-be3d-39b1088d9b9f@email.com
 2025-04-30 18:58:16,223 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 404
 2025-04-30 18:58:16,234 WARN o.s.w.s.h.AbstractHandlerExceptionResolver {logException} [main] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.svalero.apievents.domain.User> com.svalero.apievents.controller.UserController.addUser(com.svalero.apievents.domain.User) with 2 errors: [Field error in object 'user' on field 'name': rejected value [null]; codes [NotNull.user.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [Name is required]] [Field error in object 'user' on field 'password': rejected value [123]; codes [Size.user.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],30,8]; default message [Password must be between 8 and 30 characters]] ]
 2025-04-30 18:58:16,238 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,239 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:04,057 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laurad1e8724a-c7b4-458f-a617-2b96c0f66f91@email.com
-2025-05-01 12:36:04,058 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 440
-2025-05-01 12:36:04,067 WARN o.s.w.s.h.AbstractHandlerExceptionResolver {logException} [main] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.svalero.apievents.domain.User> com.svalero.apievents.controller.UserController.addUser(com.svalero.apievents.domain.User) with 2 errors: [Field error in object 'user' on field 'password': rejected value [123]; codes [Size.user.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.password,password]; arguments []; default message [password],30,8]; default message [Password must be between 8 and 30 characters]] [Field error in object 'user' on field 'name': rejected value [null]; codes [NotNull.user.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [user.name,name]; arguments []; default message [name]]; default message [Name is required]] ]
-2025-05-01 12:36:04,070 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:04,071 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -2176,17 +1916,10 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,241 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura7c6d370e-b459-44e2-8b23-15bd81c248b6@email.com
 2025-04-30 18:58:16,243 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 405
 2025-04-30 18:58:16,245 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 999
 2025-04-30 18:58:16,246 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 999
-=======
-2025-05-01 12:36:04,074 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: lauraf547edd7-5b9f-4b01-bd37-ddf1e2a6f339@email.com
-2025-05-01 12:36:04,076 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 441
-2025-05-01 12:36:04,078 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 999
-2025-05-01 12:36:04,080 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 999
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 999
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -2291,13 +2024,8 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 9
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,251 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
 2025-04-30 18:58:16,252 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
-=======
-2025-05-01 12:36:04,086 INFO c.s.a.c.UserController {deleteUser} [main] BEGIN deleteUser - Deleting user with ID: 1
-2025-05-01 12:36:04,088 ERROR c.s.a.c.UserController {deleteUser} [main] Error in deleteUser - User not found with ID: 1
->>>>>>> a7ca93b (Version sin securización)
 com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:79)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
@@ -2406,7 +2134,6 @@ com.svalero.apievents.exception.UserNotFoundException: User not found with id: 1
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-<<<<<<< HEAD
 2025-04-30 18:58:16,255 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laurad87b9608-e86a-412a-9860-849ec5959f2f@email.com
 2025-04-30 18:58:16,257 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 406
 2025-04-30 18:58:16,260 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: laurad87b9608-e86a-412a-9860-849ec5959f2f@email.com
@@ -7881,109 +7608,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-=======
-2025-05-01 12:36:04,091 INFO c.s.a.c.UserController {addUser} [main] BEGIN addUser - Adding user: laura5d0e9195-0dd6-4106-83d4-40b380e9e27e@email.com
-2025-05-01 12:36:04,093 INFO c.s.a.c.UserController {addUser} [main] END addUser - User added with ID: 442
-2025-05-01 12:36:04,096 INFO c.s.a.c.UserController {getUserByEmail} [main] BEGIN getUserByEmail - Searching user with email: laura5d0e9195-0dd6-4106-83d4-40b380e9e27e@email.com
-2025-05-01 12:36:04,099 INFO c.s.a.c.UserController {getUserByEmail} [main] END getUserByEmail - User found: 442
-2025-05-01 12:36:04,195 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.EventControllerTests]: EventControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:04,201 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.EventControllerTests
-2025-05-01 12:36:04,217 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting EventControllerTests using Java 23.0.2 with PID 42475 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:36:04,218 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:36:04,342 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:36:04,343 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:36:04,343 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 0 ms
-2025-05-01 12:36:04,347 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started EventControllerTests in 0.144 seconds (process running for 10.622)
-2025-05-01 12:36:04,355 INFO c.s.a.c.EventController {deleteEvent} [main] BEGIN deleteEvent - Deleting event with ID: 1
-2025-05-01 12:36:04,355 INFO c.s.a.c.EventController {deleteEvent} [main] END deleteEvent - Event deleted with ID: 1
-2025-05-01 12:36:04,360 INFO c.s.a.c.EventController {getEventsByCapacity} [main] BEGIN getEventsByCapacity - Searching events with capacity: 100
-2025-05-01 12:36:04,361 INFO c.s.a.c.EventController {getEventsByCapacity} [main] END getEventsByCapacity - Total events found: 1
-2025-05-01 12:36:04,371 INFO c.s.a.c.EventController {updateEvent} [main] BEGIN updateEvent - Updating event with ID: 1
-2025-05-01 12:36:04,371 INFO c.s.a.c.EventController {updateEvent} [main] END updateEvent - Event updated with ID: 1
-2025-05-01 12:36:04,390 INFO c.s.a.c.EventController {addEvent} [main] BEGIN addEvent - Adding new event: Test Event
-2025-05-01 12:36:04,390 INFO c.s.a.c.EventController {addEvent} [main] END addEvent - Event added with ID: 1
-2025-05-01 12:36:04,398 INFO c.s.a.c.EventController {getEventsBetweenDates} [main] BEGIN getEventsBetweenDates - Searching events between 2025-04-30 and 2025-05-02
-2025-05-01 12:36:04,399 INFO c.s.a.c.EventController {getEventsBetweenDates} [main] END getEventsBetweenDates - Total events found: 1
-2025-05-01 12:36:04,403 INFO c.s.a.c.EventController {getEventsByUbication} [main] BEGIN getEventsByUbication - Searching events in location: Test City
-2025-05-01 12:36:04,403 INFO c.s.a.c.EventController {getEventsByUbication} [main] END getEventsByUbication - Total events found: 1
-2025-05-01 12:36:04,407 INFO c.s.a.c.EventController {getAllEvents} [main] BEGIN getAllEvents
-2025-05-01 12:36:04,408 INFO c.s.a.c.EventController {getAllEvents} [main] END getAllEvents - Total events fetched: 1
-2025-05-01 12:36:04,412 INFO c.s.a.c.EventController {getEventById} [main] BEGIN getEventById - Fetching event with ID: 1
-2025-05-01 12:36:04,412 INFO c.s.a.c.EventController {getEventById} [main] END getEventById - Event found: 1
-2025-05-01 12:36:04,416 INFO c.s.a.c.EventController {getEventsByDate} [main] BEGIN getEventsByDate - Searching events for date: 2025-05-01
-2025-05-01 12:36:04,417 INFO c.s.a.c.EventController {getEventsByDate} [main] END getEventsByDate - Total events found: 1
-2025-05-01 12:36:04,420 INFO c.s.a.c.EventController {getEventsByName} [main] BEGIN getEventsByName - Searching events with name: Test
-2025-05-01 12:36:04,421 INFO c.s.a.c.EventController {getEventsByName} [main] END getEventsByName - Total events found: 1
-2025-05-01 12:36:04,426 INFO c.s.a.c.EventController {updateEvent} [main] BEGIN updateEventPartial - Partially updating event with ID: 1
-2025-05-01 12:36:04,426 INFO c.s.a.c.EventController {updateEvent} [main] END updateEventPartial - Event updated with ID: 1
-2025-05-01 12:36:04,432 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.EventRepositoryTests]: EventRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:04,437 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.EventRepositoryTests
-2025-05-01 12:36:04,560 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils {detectDefaultConfigurationClasses} [main] Could not detect default configuration classes for test class [com.svalero.apievents.ReservationControllerTest]: ReservationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-05-01 12:36:04,566 INFO o.s.b.t.c.SpringBootTestContextBootstrapper {getOrFindConfigurationClasses} [main] Found @SpringBootConfiguration com.svalero.apievents.ApieventsApplication for test class com.svalero.apievents.ReservationControllerTest
-2025-05-01 12:36:04,572 INFO c.s.a.c.ReservationController {updateReservation} [main] BEGIN updateReservationPartial - Partially updating reservation with ID: 1
-2025-05-01 12:36:04,572 INFO c.s.a.c.ReservationController {updateReservation} [main] END updateReservationPartial - Reservation updated with ID: 1
-2025-05-01 12:36:04,578 INFO c.s.a.c.ReservationController {updateReservation} [main] BEGIN updateReservation - Updating reservation with ID: 1
-2025-05-01 12:36:04,578 INFO c.s.a.c.ReservationController {updateReservation} [main] END updateReservation - Reservation updated with ID: 1
-2025-05-01 12:36:04,584 INFO c.s.a.c.ReservationController {deleteReservation} [main] BEGIN deleteReservation - Deleting reservation with ID: 99
-2025-05-01 12:36:04,585 ERROR c.s.a.c.ReservationController {deleteReservation} [main] Error in deleteReservation - Reservation not found with ID: 99
-com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
-	at com.svalero.apievents.service.ReservationService.deleteReservation(ReservationService.java:98)
-	at com.svalero.apievents.controller.ReservationController.deleteReservation(ReservationController.java:162)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-	at com.svalero.apievents.ReservationControllerTest.testDeleteReservation_NotFound(ReservationControllerTests.java:147)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
@@ -7991,7 +7615,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
@@ -8049,9 +7672,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8061,11 +7681,7 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8087,7 +7703,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-<<<<<<< HEAD
 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
 	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
@@ -8145,74 +7760,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-=======
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-05-01 12:36:04,586 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found
-com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
-	at com.svalero.apievents.service.ReservationService.deleteReservation(ReservationService.java:98)
-	at com.svalero.apievents.controller.ReservationController.deleteReservation(ReservationController.java:162)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
-	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
-	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-	at com.svalero.apievents.ReservationControllerTest.testDeleteReservation_NotFound(ReservationControllerTests.java:147)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
@@ -8220,7 +7767,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
@@ -8278,9 +7824,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8290,11 +7833,7 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8316,7 +7855,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-<<<<<<< HEAD
 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
 	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
@@ -8336,25 +7874,6 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 com.svalero.apievents.exception.UserNotFoundException: User not found
 	at com.svalero.apievents.service.UserService.updateUser(UserService.java:51)
 	at com.svalero.apievents.controller.UserController.updateUser(UserController.java:71)
-=======
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-05-01 12:36:04,591 INFO c.s.a.c.ReservationController {deleteReservation} [main] BEGIN deleteReservation - Deleting reservation with ID: 1
-2025-05-01 12:36:04,592 INFO c.s.a.c.ReservationController {deleteReservation} [main] END deleteReservation - Reservation deleted with ID: 1
-2025-05-01 12:36:04,597 INFO c.s.a.c.ReservationController {getAllReservations} [main] BEGIN getAllReservations
-2025-05-01 12:36:04,597 INFO c.s.a.c.ReservationController {getAllReservations} [main] END getAllReservations - Total reservations fetched: 2
-2025-05-01 12:36:04,603 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 99
-2025-05-01 12:36:04,604 ERROR c.s.a.c.ReservationController {getReservationById} [main] Error in getReservationById - Reservation not found with ID: 99
-com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
-	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
-	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -8366,13 +7885,8 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -8391,11 +7905,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.UserControllerTest.testUpdateUserNotFound(UserControllerTests.java:140)
-=======
-	at com.svalero.apievents.ReservationControllerTest.testGetReservationById_NotFound(ReservationControllerTests.java:98)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -8425,11 +7935,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8439,11 +7945,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8465,7 +7967,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-<<<<<<< HEAD
 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
 	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
@@ -8492,20 +7993,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 com.svalero.apievents.exception.UserNotFoundException: User not found
 	at com.svalero.apievents.service.UserService.deleteUser(UserService.java:78)
 	at com.svalero.apievents.controller.UserController.deleteUser(UserController.java:94)
-=======
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-05-01 12:36:04,604 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found
-com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
-	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
-	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -8517,13 +8004,8 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -8542,11 +8024,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.UserControllerTest.testDeleteUserNotFound(UserControllerTests.java:178)
-=======
-	at com.svalero.apievents.ReservationControllerTest.testGetReservationById_NotFound(ReservationControllerTests.java:98)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -8576,11 +8054,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8590,11 +8064,7 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8616,7 +8086,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
-<<<<<<< HEAD
 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
 	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
@@ -8640,36 +8109,6 @@ com.svalero.apievents.exception.ReservationNotFoundException: Reservation not fo
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
 	at com.svalero.apievents.service.ReservationService.deleteReservation(ReservationService.java:98)
 	at com.svalero.apievents.controller.ReservationController.deleteReservation(ReservationController.java:162)
-=======
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-2025-05-01 12:36:04,610 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 1
-2025-05-01 12:36:04,611 INFO c.s.a.c.ReservationController {getReservationById} [main] END getReservationById - Reservation found: 1
-2025-05-01 12:36:04,618 INFO c.s.a.c.ReservationController {addReservation} [main] BEGIN addReservation - Adding reservation for customer: Alice
-2025-05-01 12:36:04,618 INFO c.s.a.c.ReservationController {addReservation} [main] END addReservation - Reservation added with ID: 1
-2025-05-01 12:36:04,650 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-01 12:36:04,678 INFO o.s.o.j.AbstractEntityManagerFactoryBean {destroy} [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-01 12:36:04,692 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2025-05-01 12:36:04,694 INFO c.z.h.HikariDataSource {close} [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2025-05-01 12:40:07,642 INFO o.h.v.i.u.Version {<clinit>} [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2025-05-01 12:40:07,676 INFO o.s.b.StartupInfoLogger {logStarting} [main] Starting PaymentsControllerIntegrationTests using Java 23.0.2 with PID 45047 (started by lauraindia in /Users/lauraindia/Downloads/TestingAPIs-master)
-2025-05-01 12:40:07,677 INFO o.s.b.SpringApplication {logStartupProfileInfo} [main] No active profile set, falling back to 1 default profile: "default"
-2025-05-01 12:40:09,952 INFO o.s.m.w.MockServletContext {log} [main] Initializing Spring TestDispatcherServlet ''
-2025-05-01 12:40:09,953 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Initializing Servlet ''
-2025-05-01 12:40:09,955 INFO o.s.w.s.FrameworkServlet {initServletBean} [main] Completed initialization in 1 ms
-2025-05-01 12:40:09,983 INFO o.s.b.StartupInfoLogger {logStarted} [main] Started PaymentsControllerIntegrationTests in 2.804 seconds (process running for 4.111)
-2025-05-01 12:40:10,089 INFO c.s.a.c.PaymentController {getPaymentById} [main] BEGIN getPaymentById - Fetching payment with ID: 99
-2025-05-01 12:40:10,092 ERROR c.s.a.c.PaymentController {getPaymentById} [main] Error in getPaymentById - Payment not found with ID: 99
-com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
-	at com.svalero.apievents.service.PaymentService.getPaymentById(PaymentService.java:37)
-	at com.svalero.apievents.controller.PaymentController.getPaymentById(PaymentController.java:53)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -8681,13 +8120,8 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -8706,11 +8140,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.ReservationControllerTest.testDeleteReservation_NotFound(ReservationControllerTests.java:147)
-=======
-	at com.svalero.apievents.PaymentsControllerIntegrationTests.testGetPaymentById_NotFound(PaymentsControllerIntegrationTests.java:71)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -8740,11 +8170,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8754,11 +8180,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8787,17 +8209,10 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-<<<<<<< HEAD
 2025-04-30 19:15:49,342 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
 	at com.svalero.apievents.service.ReservationService.deleteReservation(ReservationService.java:98)
 	at com.svalero.apievents.controller.ReservationController.deleteReservation(ReservationController.java:162)
-=======
-2025-05-01 12:40:10,097 ERROR c.s.a.c.PaymentController {handleResourceNotFound} [main] Handling PaymentNotFoundException - Payment not found
-com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
-	at com.svalero.apievents.service.PaymentService.getPaymentById(PaymentService.java:37)
-	at com.svalero.apievents.controller.PaymentController.getPaymentById(PaymentController.java:53)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -8809,13 +8224,8 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -8834,11 +8244,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.ReservationControllerTest.testDeleteReservation_NotFound(ReservationControllerTests.java:147)
-=======
-	at com.svalero.apievents.PaymentsControllerIntegrationTests.testGetPaymentById_NotFound(PaymentsControllerIntegrationTests.java:71)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -8868,11 +8274,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8882,11 +8284,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -8915,7 +8313,6 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-<<<<<<< HEAD
 2025-04-30 19:15:49,353 INFO c.s.a.c.ReservationController {deleteReservation} [main] BEGIN deleteReservation - Deleting reservation with ID: 1
 2025-04-30 19:15:49,353 INFO c.s.a.c.ReservationController {deleteReservation} [main] END deleteReservation - Reservation deleted with ID: 1
 2025-04-30 19:15:49,362 INFO c.s.a.c.ReservationController {getAllReservations} [main] BEGIN getAllReservations
@@ -8925,21 +8322,6 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
 	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
 	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
-=======
-2025-05-01 12:40:10,229 INFO c.s.a.c.PaymentController {addPayment} [main] BEGIN addPayment - Adding payment for reservation ID: null
-2025-05-01 12:40:10,230 INFO c.s.a.c.PaymentController {addPayment} [main] END addPayment - Payment added with ID: 1
-2025-05-01 12:40:10,282 INFO c.s.a.c.PaymentController {getPaymentById} [main] BEGIN getPaymentById - Fetching payment with ID: 1
-2025-05-01 12:40:10,283 INFO c.s.a.c.PaymentController {getPaymentById} [main] END getPaymentById - Payment found: 1
-2025-05-01 12:40:10,295 INFO c.s.a.c.PaymentController {getAllPayments} [main] BEGIN getAllPayments
-2025-05-01 12:40:10,296 INFO c.s.a.c.PaymentController {getAllPayments} [main] END getAllPayments - Total payments fetched: 2
-2025-05-01 12:40:10,312 INFO c.s.a.c.PaymentController {updatePayment} [main] BEGIN updatePaymentPartial - Partially updating payment with ID: 1
-2025-05-01 12:40:10,313 INFO c.s.a.c.PaymentController {updatePayment} [main] END updatePaymentPartial - Payment updated with ID: 1
-2025-05-01 12:40:10,321 INFO c.s.a.c.PaymentController {deletePayment} [main] BEGIN deletePayment - Deleting payment with ID: 99
-2025-05-01 12:40:10,352 ERROR c.s.a.c.PaymentController {deletePayment} [main] Error in deletePayment - Payment not found with ID: 99
-com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
-	at com.svalero.apievents.service.PaymentService.deletePayment(PaymentService.java:98)
-	at com.svalero.apievents.controller.PaymentController.deletePayment(PaymentController.java:141)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -8951,13 +8333,8 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -8976,11 +8353,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.ReservationControllerTest.testGetReservationById_NotFound(ReservationControllerTests.java:98)
-=======
-	at com.svalero.apievents.PaymentsControllerIntegrationTests.testDeletePayment_NotFound(PaymentsControllerIntegrationTests.java:135)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -9010,11 +8383,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -9024,11 +8393,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -9057,17 +8422,10 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-<<<<<<< HEAD
 2025-04-30 19:15:49,376 ERROR c.s.a.c.ReservationController {handleResourceNotFoundException} [main] Handling ReservationNotFoundException - Reservation not found
 com.svalero.apievents.exception.ReservationNotFoundException: Reservation not found
 	at com.svalero.apievents.service.ReservationService.getReservationById(ReservationService.java:62)
 	at com.svalero.apievents.controller.ReservationController.getReservationById(ReservationController.java:120)
-=======
-2025-05-01 12:40:10,352 ERROR c.s.a.c.PaymentController {handleResourceNotFound} [main] Handling PaymentNotFoundException - Payment not found
-com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
-	at com.svalero.apievents.service.PaymentService.deletePayment(PaymentService.java:98)
-	at com.svalero.apievents.controller.PaymentController.deletePayment(PaymentController.java:141)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -9079,13 +8437,8 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-<<<<<<< HEAD
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-=======
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
->>>>>>> a7ca93b (Version sin securización)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
@@ -9104,11 +8457,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
 	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
 	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
-<<<<<<< HEAD
 	at com.svalero.apievents.ReservationControllerTest.testGetReservationById_NotFound(ReservationControllerTests.java:98)
-=======
-	at com.svalero.apievents.PaymentsControllerIntegrationTests.testDeletePayment_NotFound(PaymentsControllerIntegrationTests.java:135)
->>>>>>> a7ca93b (Version sin securización)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
@@ -9138,11 +8487,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -9152,11 +8497,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-<<<<<<< HEAD
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-=======
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
->>>>>>> a7ca93b (Version sin securización)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -9185,14 +8526,7 @@ com.svalero.apievents.exception.PaymentNotFoundException: Payment not found
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-<<<<<<< HEAD
 2025-04-30 19:15:49,384 INFO c.s.a.c.ReservationController {getReservationById} [main] BEGIN getReservationById - Fetching reservation with ID: 1
 2025-04-30 19:15:49,384 INFO c.s.a.c.ReservationController {getReservationById} [main] END getReservationById - Reservation found: 1
 2025-04-30 19:15:49,393 INFO c.s.a.c.ReservationController {addReservation} [main] BEGIN addReservation - Adding reservation for customer: Alice
 2025-04-30 19:15:49,393 INFO c.s.a.c.ReservationController {addReservation} [main] END addReservation - Reservation added with ID: 1
-=======
-2025-05-01 12:40:10,359 INFO c.s.a.c.PaymentController {deletePayment} [main] BEGIN deletePayment - Deleting payment with ID: 1
-2025-05-01 12:40:10,359 INFO c.s.a.c.PaymentController {deletePayment} [main] END deletePayment - Payment deleted with ID: 1
-2025-05-01 12:40:10,367 INFO c.s.a.c.PaymentController {updatePayment} [main] BEGIN updatePayment - Updating payment with ID: 1
-2025-05-01 12:40:10,367 INFO c.s.a.c.PaymentController {updatePayment} [main] END updatePayment - Payment updated with ID: 1
->>>>>>> a7ca93b (Version sin securización)
